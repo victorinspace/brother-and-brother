@@ -1,5 +1,5 @@
 module.exports = {
-  siteTitle: "HeroBlog - a GatsbyJS starter", // <title>
+  siteTitle: "Brother & Brother Builders - Your Home Design Experts", // <title>
   shortSiteTitle: "HeroBlog - GatsbyJS starter", // <title> ending for posts and pages
   siteDescription: "HeroBlog is a GatsbyJS starter.",
   siteUrl: "https://gatsby-starter-hero-blog.greglobinski.com",
