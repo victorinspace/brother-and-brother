@@ -1,15 +1,15 @@
 module.exports = {
   siteTitle: "Brother & Brother Builders - Your Home Design Experts", // <title>
-  shortSiteTitle: "HeroBlog - GatsbyJS starter", // <title> ending for posts and pages
-  siteDescription: "HeroBlog is a GatsbyJS starter.",
-  siteUrl: "https://gatsby-starter-hero-blog.greglobinski.com",
+  shortSiteTitle: "Brother & Brother Builders", // <title> ending for posts and pages
+  siteDescription: "Your Home Design Experts.",
+  siteUrl: "http://www.brotherandbrotherbuilders.com/",
   // pathPrefix: "",
   siteImage: "preview.jpg",
   siteLanguage: "en",
 
   /* author */
-  authorName: "greg lobinski",
-  authorTwitterAccount: "greglobinski",
+  authorName: "victor velasquez",
+  authorTwitterAccount: "victorinspace",
 
   /* info */
   headerTitle: "Brother & Brother",
@@ -34,6 +34,7 @@ module.exports = {
   authorSocialLinks: [
     { name: "github", url: "https://github.com/greglobinski" },
     { name: "twitter", url: "https://twitter.com/greglobinski" },
-    { name: "facebook", url: "http://facebook.com/greglobinski" }
+    { name: "facebook", url: "https://www.facebook.com/brotherandbrotherbuilders" },
+    { name: "instagram", url: "https://www.instagram.com/b_b_builders" }
   ]
 };
