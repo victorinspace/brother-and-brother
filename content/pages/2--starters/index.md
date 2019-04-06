@@ -1,19 +1,28 @@
 ---
-title: Other GatsbyJS starters
-menuTitle: Starters
+title: Services
+menuTitle: Services
 ---
 
-**HeroBlog** is not my first [GatsbyJS](https://www.gatsbyjs.org/) starter.
+### FULL REMODELING
 
-### PersonalBlog
+![Full Remodeling](./full-remodeling.jpg)
 
-![PersonalBlog](./gatsby-starter-personal-blog.png)
+Whether it’s a new addition to the family or desired expansion Brother and Brother Builders has the experience to guide through every step of the process.
 
-A ready to use, easy to customize Gatsby starter with 'like app' layout transitions. [Demo](https://gatsby-starter-personal-blog.greglobinski.com/) | [Github repo](https://github.com/greglobinski/gatsby-starter-personal-blog)
+### ROOM ADDITIONS
 
-### SimpleLanding
+![Room Additions](./room-additions.jpg)
 
-![SimpleLanding](./gatsby-starter-simple-landing.png)
+Whether it’s a new addition to the family or desired expansion Brother and Brother Builders has the experience to guide through every step of the process.
 
-As the name says, it is a simple landing page starter.
-[Demo](https://gatsby-starter-simple-landing.greglobinski.com/) | [Github repo](https://github.com/greglobinski/gatsby-starter-simple-landing)
+### KITCHENS
+
+![Kitchens](./kitchens.jpg)
+
+Brother and Brother Builders understands that the kitchen is the heart of the home. It is where memories are created. The design requires extensive planning and is one of our specialties.
+
+### BATHROOM REMODELING
+
+![Bathroom remodeling](./bathroom-remodeling.jpg)
+
+Brother and Brother Builders will transform your old ordinary bathroom to a custom spa. From tile to fixtures we will help you make the right choices with exceptional design.
