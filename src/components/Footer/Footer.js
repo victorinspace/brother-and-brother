@@ -1,58 +1,78 @@
-import React from "react";
-import PropTypes from "prop-types";
+import React from "react"
+import styled from "styled-components"
+import { FaFacebookSquare, FaInstagram } from "react-icons/fa"
+import PropTypes from "prop-types"
 
-const Footer = props => {
-  const { html, theme } = props;
+const Container = styled.footer`
+  margin: 3rem auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: #eee;
+  padding: 20px 0;
+`
 
-  return (
-    <React.Fragment>
-      <footer className="footer" dangerouslySetInnerHTML={{ __html: html }} />
+const CopyrightWrapper = styled.div`
+  padding: 5px;
+`
 
-      {/* --- STYLES --- */}
-      <style jsx>{`
-        .footer {
-          background: ${theme.color.neutral.white};
-          padding: ${theme.space.inset.default};
-          padding-top: 0;
-          padding-bottom: 120px;
+const SocialWrapper = styled.div`
+  padding: 5px;
+`
 
-          :global(ul) {
-            list-style: none;
-            text-align: center;
-            padding: 0;
+const AddressContainer = styled.div`
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+`
 
-            :global(li) {
-              color: ${theme.color.neutral.gray.g};
-              font-size: ${theme.font.size.xxs};
-              padding: ${theme.space.xxs} ${theme.space.s};
-              position: relative;
-              display: inline-block;
+const Address = styled.div`
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+`
 
-              &::after {
-                content: "•";
-                position: absolute;
-                right: ${`calc(${theme.space.xs} * -1)`};
-              }
-              &:last-child::after {
-                content: "";
-              }
-            }
-          }
-        }
+const Footer = ({ siteTitle }) => (
+  <Container>
+    <SocialWrapper>
+      <a href="https://www.facebook.com/brotherandbrotherbuilders">
+        <FaFacebookSquare />
+      </a>
+      <a href="https://www.instagram.com/b_b_builders/">
+        <FaInstagram />
+      </a>
+    </SocialWrapper>
 
-        @from-width desktop {
-          .footer {
-            padding: 0 1em 1.5em;
-          }
-        }
-      `}</style>
-    </React.Fragment>
-  );
-};
+    <AddressContainer>
+      <Address>
+        <h3>SAN JOSE</h3>
+        <p>1630 Oakland Rd #A211 San Jose, CA 95131 </p>
+      </Address>
+      <Address>
+        <h3>WALNUT CREEK</h3>
+        <p>1295 Boulevard Way #J Walnut Creek, CA 94595</p>
+        <p>888.412.2632</p>
+      </Address>
+    </AddressContainer>
+
+    <CopyrightWrapper>
+      © 2017-{new Date().getFullYear()} |{` `}
+      <a href="http://www.brotherandbrotherbuilders.com/">
+        Brother and Brother Builders
+      </a>
+    </CopyrightWrapper>
+  </Container>
+)
 
 Footer.propTypes = {
-  html: PropTypes.string,
-  theme: PropTypes.object.isRequired
-};
+  siteTitle: PropTypes.string,
+}
 
-export default Footer;
+Footer.defaultProps = {
+  siteTitle: ``,
+}
+
+export default Footer
