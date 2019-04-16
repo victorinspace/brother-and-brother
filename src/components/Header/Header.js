@@ -1,8 +1,9 @@
-import { Link } from "gatsby"
-import PropTypes from "prop-types"
-import React from "react"
-import styled from "styled-components"
-import { FaPhone } from "react-icons/fa"
+import { Link } from "gatsby";
+import PropTypes from "prop-types";
+import React from "react";
+import styled from "styled-components";
+
+import { FaPhone } from "react-icons/fa";
 
 const Container = styled.header`
   background: black;
@@ -11,19 +12,19 @@ const Container = styled.header`
   flex-direction: row;
   align-items: center;
   justify-content: center;
-`
+`;
 
 const LogoContainer = styled.div`
   border: 2px solid #fff;
   margin: 0 auto;
   maxwidth: 960;
   padding: 1.45rem 1.0875rem;
-`
+`;
 
 const Contact = styled.div`
   border: none;
   margin: 0;
-`
+`;
 
 const Phone = styled.button`
   background: #ff5c26;
@@ -32,7 +33,7 @@ const Phone = styled.button`
   maxwidth: 960;
   padding: 1.45rem 1.0875rem;
   border: none;
-`
+`;
 
 const Header = ({ siteTitle }) => (
   <Container>
@@ -41,7 +42,7 @@ const Header = ({ siteTitle }) => (
         to="/"
         style={{
           color: `white`,
-          textDecoration: `none`,
+          textDecoration: `none`
         }}
       >
         B&B Logo
@@ -51,7 +52,7 @@ const Header = ({ siteTitle }) => (
       style={{
         margin: `0 auto`,
         maxWidth: 960,
-        padding: `1.45rem 1.0875rem`,
+        padding: `1.45rem 1.0875rem`
       }}
     >
       <h3 style={{ margin: 0 }}>
@@ -60,7 +61,7 @@ const Header = ({ siteTitle }) => (
           style={{
             color: `white`,
             textDecoration: `none`,
-            paddingRight: `10px`,
+            paddingRight: `10px`
           }}
         >
           Home
@@ -70,7 +71,7 @@ const Header = ({ siteTitle }) => (
           style={{
             color: `white`,
             textDecoration: `none`,
-            paddingRight: `10px`,
+            paddingRight: `10px`
           }}
         >
           About
@@ -81,7 +82,7 @@ const Header = ({ siteTitle }) => (
           style={{
             color: `white`,
             textDecoration: `none`,
-            paddingRight: `10px`,
+            paddingRight: `10px`
           }}
         >
           Services
@@ -92,7 +93,7 @@ const Header = ({ siteTitle }) => (
           style={{
             color: `white`,
             textDecoration: `none`,
-            paddingRight: `10px`,
+            paddingRight: `10px`
           }}
         >
           Portfolio
@@ -103,7 +104,7 @@ const Header = ({ siteTitle }) => (
           style={{
             color: `white`,
             textDecoration: `none`,
-            paddingRight: `10px`,
+            paddingRight: `10px`
           }}
         >
           Reviews
@@ -114,7 +115,7 @@ const Header = ({ siteTitle }) => (
           style={{
             color: `white`,
             textDecoration: `none`,
-            paddingRight: `10px`,
+            paddingRight: `10px`
           }}
         >
           Contact
@@ -129,14 +130,14 @@ const Header = ({ siteTitle }) => (
       </Phone>
     </Contact>
   </Container>
-)
+);
 
 Header.propTypes = {
-  siteTitle: PropTypes.string,
-}
+  siteTitle: PropTypes.string
+};
 
 Header.defaultProps = {
-  siteTitle: ``,
-}
+  siteTitle: ``
+};
 
-export default Header
+export default Header;
