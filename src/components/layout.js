@@ -21,6 +21,10 @@ const Wrapper = styled.div`
   paddingtop: 0;
 `;
 
+const Content = styled.main`
+  padding-top: 105px;
+`;
+
 const Layout = ({ children }) => (
   <StaticQuery
     query={graphql`
@@ -37,7 +41,7 @@ const Layout = ({ children }) => (
         {/* <Header siteTitle={data.site.siteMetadata.title} /> */}
         <TestHeader />
         <Wrapper>
-          <main>{children}</main>
+          <Content>{children}</Content>
           <Footer />
         </Wrapper>
       </>
