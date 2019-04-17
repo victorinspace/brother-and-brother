@@ -4,7 +4,7 @@ import { FaFacebookSquare, FaInstagram } from "react-icons/fa";
 import PropTypes from "prop-types";
 
 const Container = styled.footer`
-  margin: 3rem auto;
+  margin: 3rem auto 0;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -38,7 +38,6 @@ const AddressContainer = styled.div`
   flex-direction: row;
   align-items: center;
   justify-content: center;
-  ${"" /* border: 2px solid yellow; */}
   padding: 10px;
 `;
 
@@ -49,7 +48,6 @@ const Address = styled.div`
   justify-content: center;
   padding: 10px;
   margin: 0 20px;
-  ${"" /* border: 2px solid red; */}
 `;
 
 const AddressHeader = styled.h3`

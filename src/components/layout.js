@@ -22,7 +22,7 @@ const Wrapper = styled.div`
 `;
 
 const Content = styled.main`
-  padding-top: 105px;
+  padding-top: 100px;
 `;
 
 const Layout = ({ children }) => (

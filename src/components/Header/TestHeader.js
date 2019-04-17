@@ -1,14 +1,13 @@
 import React from "react";
-import { Link } from "gatsby";
+import { Link, graphql, StaticQuery } from "gatsby";
+import Img from "gatsby-image";
 import PropTypes from "prop-types";
-import { StickyContainer, Sticky } from "react-sticky";
+
 import styled from "styled-components";
 import { FaPhone } from "react-icons/fa";
 import Button from "react-bootstrap/Button";
 
 import HeaderLogo from "../../images/logo.jpg";
-import Img from "gatsby-image";
-import { StaticQuery, graphql } from "gatsby";
 
 const Container = styled.header`
   background: black;
@@ -35,14 +34,20 @@ const LinkContainer = styled.div`
   max-width: 800px;
 `;
 
-const LinkText = styled.h3`
+const LinkText = styled.h4`
   color: #fff;
-  margin-right: 10px;
+  margin-right: 2rem;
 `;
 
 const StyledLink = styled(Link)`
-  color: aqua;
-  border-bottom: 2px solid #fff;
+  color: #fff;
+  ${"" /* padding-bottom: 2px; */}
+
+  :hover {
+    color: #9caa49;
+    text-decoration: none;
+    ${"" /* border-bottom: 2px solid #fff; */}
+  }
 `;
 
 const PhoneButtonContainer = styled.button`
@@ -59,61 +64,42 @@ const PhoneButtonContainer = styled.button`
   }
 `;
 
-const TestHeader = props => (
-  <StickyContainer>
-    <Sticky>
-      {({ style }) => (
-        <Container style={style}>
-          {/* <LogoImage src={HeaderLogo} /> */}
-          <StaticQuery
-            query={graphql`
-              query {
-                imageOne: file(relativePath: { eq: "brother-brother-logo-XS.png" }) {
-                  childImageSharp {
-                    fluid(maxWidth: 1000) {
-                      ...GatsbyImageSharpFluid
-                    }
-                  }
-                }
-              }
-            `}
-            render={data => <Img fluid={data.imageOne.childImageSharp.fluid} />}
-          />
-          <LinkContainer>
-            <LinkText>
-              <StyledLink to="/">Home</StyledLink>
-            </LinkText>
-            <LinkText>
-              <Link to="/about">About</Link>
-            </LinkText>
-            <LinkText>
-              <Link to="/services">Services</Link>
-            </LinkText>
-            <LinkText />
-            <LinkText>
-              <Link to="/portfolio">Portfolio</Link>
-            </LinkText>
-            <LinkText>
-              <Link to="/reviews">Reviews</Link>
-            </LinkText>
-            <LinkText>
-              <Link to="/contact">Contact</Link>
-            </LinkText>
-          </LinkContainer>
-          <Button
-            style={{ backgroundColor: `#ff5c26` }}
-            href="tel:+1+888+412+2632"
-            type="button"
-            size="lg"
-          >
-            <FaPhone />
-            {` `}
-            888.412.2632
-          </Button>
-        </Container>
-      )}
-    </Sticky>
-  </StickyContainer>
+const TestHeader = ({ data }) => (
+  <Container>
+    {/* <LogoImage src={HeaderLogo} /> */}
+
+    {/* <Img fluid={data.imageOne.childImageSharp.fluid} alt="logo" /> */}
+    <LinkContainer>
+      <LinkText>
+        <StyledLink to="/">Home</StyledLink>
+      </LinkText>
+      <LinkText>
+        <StyledLink to="/about">About</StyledLink>
+      </LinkText>
+      <LinkText>
+        <StyledLink to="/services">Services</StyledLink>
+      </LinkText>
+      <LinkText>
+        <StyledLink to="/portfolio">Portfolio</StyledLink>
+      </LinkText>
+      <LinkText>
+        <StyledLink to="/reviews">Reviews</StyledLink>
+      </LinkText>
+      <LinkText>
+        <StyledLink to="/contact">Contact</StyledLink>
+      </LinkText>
+    </LinkContainer>
+    <Button
+      style={{ backgroundColor: `#9caa49`, border: `none`, borderRadius: `0` }}
+      href="tel:+1+888+412+2632"
+      type="button"
+      size="lg"
+    >
+      <FaPhone />
+      {` `}
+      888.412.2632
+    </Button>
+  </Container>
 );
 
 TestHeader.propTypes = {
@@ -125,3 +111,15 @@ TestHeader.defaultProps = {
 };
 
 export default TestHeader;
+
+export const pageQuery = graphql`
+  query {
+    imageOne: file(relativePath: { eq: "brother-brother-logo-XS.png" }) {
+      childImageSharp {
+        fluid(maxWidth: 1000) {
+          ...GatsbyImageSharpFluid
+        }
+      }
+    }
+  }
+`;
