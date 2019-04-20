@@ -12,8 +12,10 @@ import FullRemodeling from "../images/project-photos/Bathroom-Remodel_The-Parkwe
 import Kitchens from "../images/project-photos/Kitchen-&-Bathroom_The-Nelson-Project/K1_19487.jpg";
 import Bathroom from "../images/project-photos/Bathroom_castro-valley/1Y6A1829.jpg";
 
+import ServicesHero from "../images/project-photos/project-photos/lon-minier/hi-res/image-13.jpg";
+
 const Wrapper = styled.section`
-  max-width: 1600px;
+  max-width: 1000px;
   margin: 2rem auto 0;
   display: flex;
   flex-direction: row;
@@ -25,11 +27,11 @@ const Wrapper = styled.section`
 const Services = () => (
   <Layout>
     <SEO title="Services" />
-    <Hero pageTitle="Services" />
+    <Hero imgSrc={ServicesHero} pageTitle="Services" />
     <Wrapper>
       <Container>
         <Row>
-          <Card border="light" style={{ width: `30rem`, margin: `0.45rem` }}>
+          <Card border="light" style={{ width: `25.5rem`, margin: `0.45rem` }}>
             <Card.Img variant="top" src={FullRemodeling} alt="Full Remodeling" />
             <Card.Body>
               <Card.Title>Full Remodeling</Card.Title>
@@ -40,7 +42,7 @@ const Services = () => (
             </Card.Body>
           </Card>
 
-          <Card border="light" style={{ width: `30rem`, margin: `0.45rem` }}>
+          <Card border="light" style={{ width: `25.5rem`, margin: `0.45rem` }}>
             <Card.Img variant="top" src={RoomAddition} alt="Room Additions" />
             <Card.Body>
               <Card.Title>Room Additions</Card.Title>
@@ -53,7 +55,7 @@ const Services = () => (
         </Row>
 
         <Row>
-          <Card border="light" style={{ width: `30rem`, margin: `0.45rem` }}>
+          <Card border="light" style={{ width: `25.5rem`, margin: `0.45rem` }}>
             <Card.Img variant="top" src={Kitchens} alt="Kitchens" />
             <Card.Body>
               <Card.Title>Kitchens</Card.Title>
@@ -65,7 +67,7 @@ const Services = () => (
             </Card.Body>
           </Card>
 
-          <Card border="light" style={{ width: `30rem`, margin: `0.45rem` }}>
+          <Card border="light" style={{ width: `25.5rem`, margin: `0.45rem` }}>
             <Card.Img variant="top" src={Bathroom} alt="Bathroom" />
             <Card.Body>
               <Card.Title>Bathroom</Card.Title>

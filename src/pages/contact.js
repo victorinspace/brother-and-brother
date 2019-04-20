@@ -4,6 +4,8 @@ import Layout from "../components/layout";
 import styled from "styled-components";
 import SEO from "../components/seo";
 
+import ContactHero from "../images/project-photos/ben&sandy-wu/Web/image-19.jpg";
+
 const Form = styled.form`
   max-width: 835px;
   marginbottom: 1.45rem;
@@ -61,7 +63,7 @@ const SubmitInput = styled.input`
 const Contact = () => (
   <Layout>
     <SEO title="Contact" />
-    <Hero pageTitle="Contact Us" subTitle="Reach out for a quote!" />
+    <Hero imgSrc={ContactHero} pageTitle="Contact Us" subTitle="Reach out for a quote!" />
     <Form>
       <InputGroup>
         <Input placeholder="NAME" />

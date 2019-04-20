@@ -4,22 +4,17 @@ import styled from "styled-components";
 
 const Title = styled.h1`
   font-size: 5em;
-  color: #fff;
+  color: #000;
 `;
 
 const SubTitle = styled.h2`
   font-size: 3em;
-  color: #fff;
+  color: #000;
 `;
 
 const Hero = props => (
   <div>
-    <LazyHero
-      imageSrc="https://unsplash.it/2000/1000/?random?blur"
-      parallaxOffset={100}
-      minHeight={`75vh`}
-      color={`#000`}
-    >
+    <LazyHero imageSrc={props.imgSrc} parallaxOffset={100} minHeight={`80vh`} color={`#ccc`}>
       <Title>{props.pageTitle}</Title>
       <SubTitle>{props.subTitle}</SubTitle>
     </LazyHero>
