@@ -4,8 +4,8 @@ import Hero from "../components/hero/hero";
 import Layout from "../components/layout";
 import Awards from "../components/awards/awards";
 import styled from "styled-components";
-
 import SEO from "../components/seo";
+import { StaticQuery, graphql } from "gatsby";
 
 const AwardsContainer = styled.section`
   max-width: 800px;
@@ -13,13 +13,34 @@ const AwardsContainer = styled.section`
 `;
 
 const IndexPage = () => (
-  <Layout>
-    <SEO title="Home" keywords={[`gatsby`, `application`, `react`]} />
-    <Hero pageTitle="Brother & Brother Builders" subTitle="Your Home Design Experts" />
-    <AwardsContainer>
-      <Awards style={{ maxWidth: `10px` }} />
-    </AwardsContainer>
-  </Layout>
+  <StaticQuery
+    query={graphql`
+      {
+        allFile(filter: { sourceInstanceName: { eq: "images" } }) {
+          edges {
+            node {
+              relativePath
+              childImageSharp {
+                fluid(maxWidth: 1600) {
+                  srcSet
+                }
+              }
+            }
+          }
+        }
+      }
+    `}
+    render={data => (
+      <Layout>
+        {console.log(data)}
+        <SEO title="Home" keywords={[`gatsby`, `application`, `react`]} />
+        <Hero pageTitle="Brother & Brother Builders" subTitle="Your Home Design Experts" />
+        <AwardsContainer>
+          <Awards />
+        </AwardsContainer>
+      </Layout>
+    )}
+  />
 );
 
 export default IndexPage;

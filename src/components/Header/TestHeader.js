@@ -41,12 +41,10 @@ const LinkText = styled.h4`
 
 const StyledLink = styled(Link)`
   color: #fff;
-  ${"" /* padding-bottom: 2px; */}
 
   :hover {
     color: #9caa49;
     text-decoration: none;
-    ${"" /* border-bottom: 2px solid #fff; */}
   }
 `;
 
@@ -66,7 +64,7 @@ const PhoneButtonContainer = styled.button`
 
 const TestHeader = ({ data }) => (
   <Container>
-    {/* <LogoImage src={HeaderLogo} /> */}
+    <LogoImage src={HeaderLogo} />
 
     {/* <Img fluid={data.imageOne.childImageSharp.fluid} alt="logo" /> */}
     <LinkContainer>
@@ -112,14 +110,14 @@ TestHeader.defaultProps = {
 
 export default TestHeader;
 
-export const pageQuery = graphql`
-  query {
-    imageOne: file(relativePath: { eq: "brother-brother-logo-XS.png" }) {
-      childImageSharp {
-        fluid(maxWidth: 1000) {
-          ...GatsbyImageSharpFluid
-        }
-      }
-    }
-  }
-`;
+// export const pageQuery = graphql`
+//   query {
+//     imageOne: file(relativePath: { eq: "brother-brother-logo-XS.png" }) {
+//       childImageSharp {
+//         fluid(maxWidth: 1000) {
+//           ...GatsbyImageSharpFluid
+//         }
+//       }
+//     }
+//   }
+// `;
