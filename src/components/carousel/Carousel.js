@@ -1,41 +1,38 @@
 import React from "react";
+import styled from "styled-components";
 import Carousel from "react-bootstrap/Carousel";
-import Caption from "react-bootstrap/Caption";
 
-<Carousel>
-  <Carousel.Item>
-    <img
-      className="d-block w-100"
-      src="holder.js/800x400?text=First slide&bg=373940"
-      alt="First slide"
-    />
-    <Carousel.Caption>
-      <h3>First slide label</h3>
-      <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
-    </Carousel.Caption>
-  </Carousel.Item>
-  <Carousel.Item>
-    <img
-      className="d-block w-100"
-      src="holder.js/800x400?text=Second slide&bg=282c34"
-      alt="Third slide"
-    />
+import CarouselOne from "../../images/carousel/carousel-1.jpg";
+import CarouselTwo from "../../images/carousel/carousel-2.jpg";
+import CarouselThree from "../../images/carousel/carousel-3.jpg";
+import CarouselFour from "../../images/carousel/carousel-4.jpg";
 
-    <Carousel.Caption>
-      <h3>Second slide label</h3>
-      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-    </Carousel.Caption>
-  </Carousel.Item>
-  <Carousel.Item>
-    <img
-      className="d-block w-100"
-      src="holder.js/800x400?text=Third slide&bg=20232a"
-      alt="Third slide"
-    />
+const CarouselWrapper = styled.section`
+  display: block;
+  overflow: hidden;
+`;
 
-    <Carousel.Caption>
-      <h3>Third slide label</h3>
-      <p>Praesent commodo cursus magna, vel scelerisque nisl consectetur.</p>
-    </Carousel.Caption>
-  </Carousel.Item>
-</Carousel>;
+const CarouselImg = styled.img`
+  width: 100%;
+`;
+
+const CarouselComponent = () => (
+  <CarouselWrapper>
+    <Carousel style={{ maxHeight: `80vh` }}>
+      <Carousel.Item>
+        <CarouselImg src={CarouselOne} alt="First slide" />
+      </Carousel.Item>
+      <Carousel.Item>
+        <CarouselImg src={CarouselTwo} alt="Third slide" />
+      </Carousel.Item>
+      <Carousel.Item>
+        <CarouselImg src={CarouselThree} alt="Third slide" />
+      </Carousel.Item>
+      <Carousel.Item>
+        <CarouselImg src={CarouselFour} alt="Fourth slide" />
+      </Carousel.Item>
+    </Carousel>
+  </CarouselWrapper>
+);
+
+export default CarouselComponent;

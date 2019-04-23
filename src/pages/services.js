@@ -7,7 +7,7 @@ import Card from "react-bootstrap/Card";
 import Container from "react-bootstrap/Container";
 import Row from "react-bootstrap/Row";
 
-import RoomAddition from "../images/project-photos/Addition-The-Cedar-Project/K1_14763.jpg";
+import RoomAddition from "../images/project-photos/Addition_The-Cedar-Project/K1_14763.jpg";
 import FullRemodeling from "../images/project-photos/Bathroom-Remodel_The-Parkwell-Project/K1_13828-HDR.jpg";
 import Kitchens from "../images/project-photos/Kitchen-&-Bathroom_The-Nelson-Project/K1_19487.jpg";
 import Bathroom from "../images/project-photos/Bathroom_castro-valley/1Y6A1829.jpg";
