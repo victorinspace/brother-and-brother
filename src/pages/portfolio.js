@@ -40,7 +40,7 @@ const Portfolio = () => (
             </Card>
           </Link>
 
-          <Link to="/portfolios/bathroom">
+          <Link to="#">
             <Card border="light" style={{ width: `19.5rem`, margin: `0.75rem` }}>
               <Card.Img variant="top" src={Bathroom} alt="Bathroom" />
               <Card.Body>

@@ -3,10 +3,8 @@ import Layout from "../components/layout";
 import styled from "styled-components";
 import SEO from "../components/seo";
 import "bootstrap/dist/css/bootstrap.css";
-import VideoCover from "react-video-cover";
 
 import CarouselComponent from "../components/carousel/CarouselComponent";
-import ResponsiveEmbed from "react-bootstrap/ResponsiveEmbed";
 
 import Awards from "../components/awards/Awards";
 

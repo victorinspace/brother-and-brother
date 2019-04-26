@@ -18,7 +18,7 @@ const CarouselImg = styled.img`
 
 const CarouselComponent = () => (
   <CarouselWrapper>
-    <Carousel style={{ maxHeight: `85vh` }} controls="false">
+    <Carousel style={{ maxHeight: `95vh` }} controls="false">
       <Carousel.Item>
         <CarouselImg src={CarouselOne} alt="First slide" />
       </Carousel.Item>
