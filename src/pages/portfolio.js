@@ -17,13 +17,11 @@ import Bathroom from "../assets/images/project-photos/BATHROOM-Castro-Valley/1Y6
 
 const Wrapper = styled.section`
   max-width: 95vw;
-  margin: 1rem auto 0;
+  margin: 3rem auto;
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
-  align-items: center;
-  justify-content: center;
-  border: 1px solid red;
+  justify-content: space-between;
 `;
 
 const Portfolio = () => (
@@ -31,10 +29,10 @@ const Portfolio = () => (
     <SEO title="Portfolio" />
     <Hero imgSrc={PortfolioHero} pageTitle="Portfolio" />
     <Wrapper>
-      <div style={{ border: `1px solid blue` }}>
-        <Container>
+      <Container>
+        <Row>
           <Link to="#">
-            <Card border="light" style={{ width: `19.5rem`, margin: `0.45rem` }}>
+            <Card border="light" style={{ width: `19.5rem`, margin: `0.75rem` }}>
               <Card.Img variant="top" src={FullRemodeling} alt="Full Remodeling" />
               <Card.Body>
                 <Card.Title style={{ fontSize: `1.5em` }}>All</Card.Title>
@@ -43,7 +41,7 @@ const Portfolio = () => (
           </Link>
 
           <Link to="/portfolios/bathroom">
-            <Card border="light" style={{ width: `19.5rem`, margin: `0.35rem` }}>
+            <Card border="light" style={{ width: `19.5rem`, margin: `0.75rem` }}>
               <Card.Img variant="top" src={Bathroom} alt="Bathroom" />
               <Card.Body>
                 <Card.Title style={{ fontSize: `1.5em` }}>Bathroom Remodeling</Card.Title>
@@ -52,7 +50,7 @@ const Portfolio = () => (
           </Link>
 
           <Link to="#">
-            <Card border="light" style={{ width: `19.5rem`, margin: `0.45rem` }}>
+            <Card border="light" style={{ width: `19.5rem`, margin: `0.75rem` }}>
               <Card.Img variant="top" src={FullRemodeling} alt="Full Remodeling" />
               <Card.Body>
                 <Card.Title style={{ fontSize: `1.5em` }}>Before/After</Card.Title>
@@ -61,7 +59,7 @@ const Portfolio = () => (
           </Link>
 
           <Link to="#">
-            <Card border="light" style={{ width: `19.5rem`, margin: `0.45rem` }}>
+            <Card border="light" style={{ width: `19.5rem`, margin: `0.75rem` }}>
               <Card.Img variant="top" src={RoomAddition} alt="Room Additions" />
               <Card.Body>
                 <Card.Title style={{ fontSize: `1.5em` }}>Full Remodel</Card.Title>
@@ -70,7 +68,7 @@ const Portfolio = () => (
           </Link>
 
           <Link to="#">
-            <Card border="light" style={{ width: `19.5rem`, margin: `0.45rem` }}>
+            <Card border="light" style={{ width: `19.5rem`, margin: `0.75rem` }}>
               <Card.Img variant="top" src={Kitchens} alt="Kitchens" />
               <Card.Body>
                 <Card.Title style={{ fontSize: `1.5em` }}>Kitchen Remodeling</Card.Title>
@@ -79,15 +77,15 @@ const Portfolio = () => (
           </Link>
 
           <Link to="#">
-            <Card border="light" style={{ width: `19.5rem`, margin: `0.45rem` }}>
+            <Card border="light" style={{ width: `19.5rem`, margin: `0.75rem` }}>
               <Card.Img variant="top" src={Kitchens} alt="Kitchens" />
               <Card.Body>
                 <Card.Title style={{ fontSize: `1.5em` }}>Room Additions</Card.Title>
               </Card.Body>
             </Card>
           </Link>
-        </Container>
-      </div>
+        </Row>
+      </Container>
     </Wrapper>
   </Layout>
 );

@@ -6,6 +6,7 @@ import SEO from "../components/seo";
 import Card from "react-bootstrap/Card";
 import Container from "react-bootstrap/Container";
 import Row from "react-bootstrap/Row";
+import { Helment } from "react-helmet";
 
 import RoomAddition from "../assets/images/project-photos/ADDITION-The-Cedar-Project/K1_14763.jpg";
 import FullRemodeling from "../assets/images/project-photos/BATHROOM-The-Parkwell-Project/K1_13828-HDR.jpg";
@@ -26,61 +27,63 @@ const Wrapper = styled.section`
 
 const Services = () => (
   <Layout>
-    <SEO title="Services" />
-    <Hero imgSrc={ServicesHero} pageTitle="Services" />
-    <Wrapper>
-      <Container>
-        <Row>
-          <Card border="light" style={{ width: `25.5rem`, margin: `0.45rem` }}>
-            <Card.Img variant="top" src={FullRemodeling} alt="Full Remodeling" />
-            <Card.Body>
-              <Card.Title>Full Remodeling</Card.Title>
-              <Card.Text>
-                Whether it’s a new addition to the family or desired expansion Brother and Brother
-                Builders has the experience to guide through every step of the process.
-              </Card.Text>
-            </Card.Body>
-          </Card>
+    <Helment>
+      <SEO title="Services" />
+      <Hero imgSrc={ServicesHero} pageTitle="Services" />
+      <Wrapper>
+        <Container>
+          <Row>
+            <Card border="light" style={{ width: `25.5rem`, margin: `0.45rem` }}>
+              <Card.Img variant="top" src={FullRemodeling} alt="Full Remodeling" />
+              <Card.Body>
+                <Card.Title>Full Remodeling</Card.Title>
+                <Card.Text>
+                  Whether it’s a new addition to the family or desired expansion Brother and Brother
+                  Builders has the experience to guide through every step of the process.
+                </Card.Text>
+              </Card.Body>
+            </Card>
 
-          <Card border="light" style={{ width: `25.5rem`, margin: `0.45rem` }}>
-            <Card.Img variant="top" src={RoomAddition} alt="Room Additions" />
-            <Card.Body>
-              <Card.Title>Room Additions</Card.Title>
-              <Card.Text>
-                Whether it’s a new addition to the family or desired expansion Brother and Brother
-                Builders has the experience to guide through every step of the process.
-              </Card.Text>
-            </Card.Body>
-          </Card>
-        </Row>
+            <Card border="light" style={{ width: `25.5rem`, margin: `0.45rem` }}>
+              <Card.Img variant="top" src={RoomAddition} alt="Room Additions" />
+              <Card.Body>
+                <Card.Title>Room Additions</Card.Title>
+                <Card.Text>
+                  Whether it’s a new addition to the family or desired expansion Brother and Brother
+                  Builders has the experience to guide through every step of the process.
+                </Card.Text>
+              </Card.Body>
+            </Card>
+          </Row>
 
-        <Row>
-          <Card border="light" style={{ width: `25.5rem`, margin: `0.45rem` }}>
-            <Card.Img variant="top" src={Kitchens} alt="Kitchens" />
-            <Card.Body>
-              <Card.Title>Kitchens</Card.Title>
-              <Card.Text>
-                Brother and Brother Builders understands that the kitchen is the heart of the home.
-                It is where memories are created. The design requires extensive planning and is one
-                of our specialties.
-              </Card.Text>
-            </Card.Body>
-          </Card>
+          <Row>
+            <Card border="light" style={{ width: `25.5rem`, margin: `0.45rem` }}>
+              <Card.Img variant="top" src={Kitchens} alt="Kitchens" />
+              <Card.Body>
+                <Card.Title>Kitchens</Card.Title>
+                <Card.Text>
+                  Brother and Brother Builders understands that the kitchen is the heart of the
+                  home. It is where memories are created. The design requires extensive planning and
+                  is one of our specialties.
+                </Card.Text>
+              </Card.Body>
+            </Card>
 
-          <Card border="light" style={{ width: `25.5rem`, margin: `0.45rem` }}>
-            <Card.Img variant="top" src={Bathroom} alt="Bathroom" />
-            <Card.Body>
-              <Card.Title>Bathroom</Card.Title>
-              <Card.Text>
-                Brother and Brother Builders will transform your old ordinary bathroom to a custom
-                spa. From tile to fixtures we will help you make the right choices with exceptional
-                design.
-              </Card.Text>
-            </Card.Body>
-          </Card>
-        </Row>
-      </Container>
-    </Wrapper>
+            <Card border="light" style={{ width: `25.5rem`, margin: `0.45rem` }}>
+              <Card.Img variant="top" src={Bathroom} alt="Bathroom" />
+              <Card.Body>
+                <Card.Title>Bathroom</Card.Title>
+                <Card.Text>
+                  Brother and Brother Builders will transform your old ordinary bathroom to a custom
+                  spa. From tile to fixtures we will help you make the right choices with
+                  exceptional design.
+                </Card.Text>
+              </Card.Body>
+            </Card>
+          </Row>
+        </Container>
+      </Wrapper>
+    </Helment>
   </Layout>
 );
 
