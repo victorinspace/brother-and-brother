@@ -8,7 +8,7 @@ import Card from "react-bootstrap/Card";
 import Container from "react-bootstrap/Container";
 import Row from "react-bootstrap/Row";
 
-import PortfolioHero from "../assets/images/project-photos/BATHROOM-The-Ashbrook-Project/img_8980.jpg";
+import PortfolioHero from "../assets/images/project-photos/FULL-Ben&Sandy-Wu/image-58.jpg";
 
 import RoomAddition from "../assets/images/project-photos/ADDITION-The-Cedar-Project/K1_14763.jpg";
 import FullRemodeling from "../assets/images/project-photos/BATHROOM-The-Parkwell-Project/K1_13828-HDR.jpg";
