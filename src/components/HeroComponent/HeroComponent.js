@@ -12,7 +12,7 @@ const SubTitle = styled.h2`
   color: #000;
 `;
 
-const Hero = props => (
+const HeroComponent = props => (
   <div>
     <LazyHero imageSrc={props.imgSrc} parallaxOffset={100} minHeight={`80vh`} color={`#ccc`}>
       <Title>{props.pageTitle}</Title>
@@ -23,4 +23,4 @@ const Hero = props => (
   </div>
 );
 
-export default Hero;
+export default HeroComponent;

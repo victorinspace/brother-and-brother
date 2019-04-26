@@ -1,6 +1,6 @@
 import React from "react";
 import { Link } from "gatsby";
-import Hero from "../components/hero/hero";
+import Hero from "../components/HeroComponent/HeroComponent.js";
 import Layout from "../components/layout";
 import styled from "styled-components";
 import SEO from "../components/seo";
