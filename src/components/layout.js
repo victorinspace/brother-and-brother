@@ -10,7 +10,7 @@ import PropTypes from "prop-types";
 import { StaticQuery, graphql } from "gatsby";
 
 // import Header from "./header/header";
-import TestHeader from "./header/TestHeader";
+import TestHeader from "./header/TestHeader.js";
 import Footer from "./FooterComponent/FooterComponent.js";
 import styled from "styled-components";
 import "./layout.css";

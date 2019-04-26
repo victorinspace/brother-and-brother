@@ -1,6 +1,6 @@
 import React from "react";
 import PropTypes from "prop-types";
-import { Link } from "gatsby";
+
 import styled from "styled-components";
 import { FaPhone } from "react-icons/fa";
 import Navbar from "react-bootstrap/Navbar";
