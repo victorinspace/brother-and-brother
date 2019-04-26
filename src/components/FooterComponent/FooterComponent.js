@@ -28,7 +28,6 @@ const SocialLink = styled.a`
   padding: 10px 15px;
   font-size: 2em;
   color: #9caa49;
-
   :hover {
     color: #eee;
   }
@@ -55,7 +54,7 @@ const AddressHeader = styled.h3`
   color: #ccc;
 `;
 
-const Footer = ({ siteTitle }) => (
+const FooterComponent = ({ siteTitle }) => (
   <Container>
     <SocialWrapper>
       <SocialLink href="https://www.facebook.com/brotherandbrotherbuilders">
@@ -86,12 +85,12 @@ const Footer = ({ siteTitle }) => (
   </Container>
 );
 
-Footer.propTypes = {
+FooterComponent.propTypes = {
   siteTitle: PropTypes.string
 };
 
-Footer.defaultProps = {
+FooterComponent.defaultProps = {
   siteTitle: ``
 };
 
-export default Footer;
+export default FooterComponent;

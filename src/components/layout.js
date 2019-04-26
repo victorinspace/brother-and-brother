@@ -11,7 +11,7 @@ import { StaticQuery, graphql } from "gatsby";
 
 // import Header from "./header/header";
 import TestHeader from "./header/TestHeader";
-import Footer from "./footer/footer";
+import Footer from "./FooterComponent/FooterComponent.js";
 import styled from "styled-components";
 import "./layout.css";
 
