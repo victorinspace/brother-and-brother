@@ -4,7 +4,7 @@ import Layout from "../components/layout";
 import styled from "styled-components";
 import SEO from "../components/seo";
 
-import ReviewsHero from "../images/project-photos/Julie-Campbell_The-Vizcaya-Project/image-22.jpg";
+import ReviewsHero from "../assets/images/project-photos/BATHROOM-B&A-The-Vizcaya-Project/image-22.jpg";
 
 const Container = styled.section`
   max-width: 1000px;

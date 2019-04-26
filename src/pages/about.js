@@ -4,11 +4,12 @@ import Layout from "../components/layout";
 import styled from "styled-components";
 import SEO from "../components/seo";
 
-import AboutHero from "../images/project-photos/Timothy-Smith-project/img_8986.jpg";
+import AboutHero from "../assets/images/project-photos/BATHROOM-Timothy-Smith-Project/img_8986.jpg";
 
 const Container = styled.section`
   max-width: 1000px;
   margin: 50px auto 0;
+  padding: 1rem;
 `;
 
 const About = () => (

@@ -4,7 +4,7 @@ import Layout from "../components/layout";
 import styled from "styled-components";
 import SEO from "../components/seo";
 
-import ContactHero from "../images/project-photos/ben&sandy-wu/Web/image-19.jpg";
+import ContactHero from "../assets/images/project-photos/FULL-Ben&Sandy-Wu/image-19.jpg";
 
 const Form = styled.form`
   max-width: 835px;

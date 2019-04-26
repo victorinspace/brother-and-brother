@@ -6,7 +6,7 @@ import SEO from "../../components/seo";
 
 import Hero from "../../components/hero/hero";
 import Layout from "../../components/layout";
-import PortfolioHero from "../../images/project-photos/Eckley-project/WCKitchenandFamilyRoom-14.jpg";
+import PortfolioHero from "../../assets/images/project-photos/B&A-KITCHEN-Eckley-Project/WCKitchenandFamilyRoom-14.jpg";
 
 export default class Bathroom extends Component {
   static propTypes = {
@@ -19,15 +19,6 @@ export default class Bathroom extends Component {
       <Layout>
         <SEO title="Bathroom" />
         <Hero imgSrc={PortfolioHero} pageTitle="Bathroom" />
-
-        <div>
-          {bathroomImages.map(image => (
-            <Img
-              key={image.node.childImageSharp.fluid.src}
-              fluid={image.node.childImageSharp.fluid}
-            />
-          ))}
-        </div>
       </Layout>
     );
   }

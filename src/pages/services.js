@@ -7,12 +7,12 @@ import Card from "react-bootstrap/Card";
 import Container from "react-bootstrap/Container";
 import Row from "react-bootstrap/Row";
 
-import RoomAddition from "../images/project-photos/Addition_The-Cedar-Project/K1_14763.jpg";
-import FullRemodeling from "../images/project-photos/Bathroom-Remodel_The-Parkwell-Project/K1_13828-HDR.jpg";
-import Kitchens from "../images/project-photos/Kitchen-&-Bathroom_The-Nelson-Project/K1_19487.jpg";
-import Bathroom from "../images/project-photos/Bathroom_castro-valley/1Y6A1829.jpg";
+import RoomAddition from "../assets/images/project-photos/ADDITION-The-Cedar-Project/K1_14763.jpg";
+import FullRemodeling from "../assets/images/project-photos/BATHROOM-The-Parkwell-Project/K1_13828-HDR.jpg";
+import Kitchens from "../assets/images/project-photos/KITCHEN-BATHROOM-The-Nelson-Project/K1_19487.jpg";
+import Bathroom from "../assets/images/project-photos/BATHROOM-Castro-Valley/1Y6A1829.jpg";
 
-import ServicesHero from "../images/project-photos/project-photos/lon-minier/hi-res/image-13.jpg";
+import ServicesHero from "../assets/images/project-photos/BATHROOM-lon-Minier/image-13.jpg";
 
 const Wrapper = styled.section`
   max-width: 1000px;

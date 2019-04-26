@@ -27,9 +27,10 @@ const SocialWrapper = styled.div`
 const SocialLink = styled.a`
   padding: 10px 15px;
   font-size: 2em;
+  color: #9caa49;
 
   :hover {
-    color: #9caa49;
+    color: #eee;
   }
 `;
 
@@ -78,7 +79,9 @@ const Footer = ({ siteTitle }) => (
 
     <CopyrightWrapper>
       © 2017-{new Date().getFullYear()} |{` `}
-      <a href="http://www.brotherandbrotherbuilders.com/">Brother and Brother Builders</a>
+      <a style={{ color: `#9caa49` }} href="http://www.brotherandbrotherbuilders.com/">
+        Brother and Brother Builders
+      </a>
     </CopyrightWrapper>
   </Container>
 );

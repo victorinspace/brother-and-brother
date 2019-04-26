@@ -22,7 +22,23 @@ const Wrapper = styled.div`
 `;
 
 const Content = styled.main`
-  padding-top: 100px;
+  ${"" /* padding-top: 100px; */}
+
+  ${"" /* @media screen and (max-width: 849px) {
+    padding-top: 150px;
+  }
+
+  @media screen and (max-width: 693px) {
+    padding-top: 220px;
+  }
+
+  @media screen and (max-width: 552px) {
+    padding-top: 275px;
+  }
+
+  @media screen and (max-width: 480px) {
+    padding-top: 255px;
+  } */}
 `;
 
 const Layout = ({ children }) => (
