@@ -7,18 +7,18 @@ import "bootstrap/dist/css/bootstrap.css";
 import CarouselComponent from "../components/carousel/CarouselComponent";
 // import Awards from "../components/awards/Awards";
 
-import oneYear from "../../assets/images/awards/1year.png";
-import fiftyReviews from "../../assets/images/awards/50reviews.png";
-import awardTwo from "../../assets/images/awards/badge_47_8@2x.png";
-import awardThree from "../../assets/images/awards/badge_29_9@2x.png";
-import awardFour from "../../assets/images/awards/badge_44_8@2x.png";
-import awardFive from "../../assets/images/awards/badge_47_8@2x.png";
-import homeAdvisor2017 from "../../assets/images/awards/boha-2017.png";
-import homeAdvisor2018 from "../../assets/images/awards/boha-2018.png";
-import elite from "../../assets/images/awards/elite.png";
-import buildZoom from "../../assets/images/awards/t10pl2.png";
-import topRated from "../../assets/images/awards/toprated.png";
-import yelp from "../../assets/images/awards/yelp.png";
+import oneYear from "../assets/images/awards/1year.png";
+import fiftyReviews from "../assets/images/awards/50reviews.png";
+import awardTwo from "../assets/images/awards/badge_47_8@2x.png";
+import awardThree from "../assets/images/awards/badge_29_9@2x.png";
+import awardFour from "../assets/images/awards/badge_44_8@2x.png";
+import awardFive from "../assets/images/awards/badge_47_8@2x.png";
+import homeAdvisor2017 from "../assets/images/awards/boha-2017.png";
+import homeAdvisor2018 from "../assets/images/awards/boha-2018.png";
+import elite from "../assets/images/awards/elite.png";
+import buildZoom from "../assets/images/awards/t10pl2.png";
+import topRated from "../assets/images/awards/toprated.png";
+import yelp from "../assets/images/awards/yelp.png";
 
 // import HomeVideo from "../images/mp4/BBSlide-Large.mov";
 
