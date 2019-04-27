@@ -15,7 +15,7 @@ const LogoImage = styled.img`
   margin: 0;
 `;
 
-const TestHeader = ({ data }) => (
+const HeaderComponent = ({ data }) => (
   <Navbar collapseOnSelect expand="lg" bg="dark" variant="dark" fixed="top">
     <Navbar.Brand href="/">
       <LogoImage src={HeaderLogo} />
@@ -45,12 +45,12 @@ const TestHeader = ({ data }) => (
   </Navbar>
 );
 
-TestHeader.propTypes = {
+HeaderComponent.propTypes = {
   siteTitle: PropTypes.string
 };
 
-TestHeader.defaultProps = {
+HeaderComponent.defaultProps = {
   siteTitle: ``
 };
 
-export default TestHeader;
+export default HeaderComponent;
