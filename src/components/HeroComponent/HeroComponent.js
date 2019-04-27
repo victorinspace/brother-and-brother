@@ -13,7 +13,7 @@ const SubTitle = styled.h2`
 `;
 
 const HeroComponent = props => (
-  <div>
+  <div style={{ paddingTop: `115px` }}>
     <LazyHero imageSrc={props.imgSrc} parallaxOffset={100} minHeight={`80vh`} color={`#ccc`}>
       <Title>{props.pageTitle}</Title>
       <SubTitle>{props.subTitle}</SubTitle>

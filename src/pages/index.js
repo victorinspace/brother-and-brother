@@ -13,7 +13,7 @@ import FullRemodeling from "../assets/images/project-photos/BATHROOM-The-Parkwel
 import Kitchens from "../assets/images/project-photos/KITCHEN-BATHROOM-The-Nelson-Project/K1_19487.jpg";
 import Bathroom from "../assets/images/project-photos/BATHROOM-Castro-Valley/1Y6A1829.jpg";
 
-// import CarouselComponent from "../components/carousel/CarouselComponent";
+import CarouselComponent from "../components/carousel/CarouselComponent";
 // import Awards from "../components/awards/Awards";
 
 import oneYear from "../assets/images/awards/1year.png";
@@ -31,7 +31,8 @@ import yelp from "../assets/images/awards/yelp.png";
 
 // import HomeVideo from "../images/mp4/BBSlide-Large.mov";
 
-import MainHero from "../assets/images/project-photos/BATHROOM-Timothy-Smith-Project/img_8986.jpg";
+// import MainHero from "../assets/images/project-photos/BATHROOM-Timothy-Smith-Project/img_8986.jpg";
+
 // import ServicesHero from "../assets/images/project-photos/BATHROOM-lon-Minier/image-13.jpg";
 
 const AwardsContainerContainer = styled.section`
@@ -69,8 +70,8 @@ const Wrapper = styled.section`
 const IndexPage = () => (
   <Layout>
     <SEO title="Home" keywords={[`gatsby`, `application`, `react`]} />
-    <Hero imgSrc={MainHero} pageTitle="Brother & Brother Builders" />
-    {/* <CarouselComponent /> */}
+    {/* <Hero imgSrc={MainHero} pageTitle="Brother & Brother Builders" /> */}
+    <CarouselComponent />
     {/* <div
       style={{
         width: "300px",
