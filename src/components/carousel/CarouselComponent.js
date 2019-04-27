@@ -15,6 +15,7 @@ import Bathroom from "../../assets/images/project-photos/BATHROOM-Castro-Valley/
 const CarouselWrapper = styled.section`
   display: block;
   overflow: hidden;
+  padding-top: 115px;
 `;
 
 const CarouselImg = styled.img`
