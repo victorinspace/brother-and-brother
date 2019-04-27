@@ -5,18 +5,18 @@ import styled from "styled-components";
 import SEO from "../components/seo";
 
 import ReviewsHero from "../assets/images/project-photos/BATHROOM-B&A-The-Vizcaya-Project/image-22.jpg";
+import ReviewGraphic from "../assets/images/review-graphic.jpeg";
 
 const Container = styled.section`
   max-width: 1000px;
   margin: 2rem auto 0;
-  display: flex;
 `;
 
 const ReviewContainer = styled.article`
   padding: 5px;
   margin: 2rem;
   height: 300px;
-  width: 400px;
+  ${"" /* width: 400px; */}
 `;
 
 const Reviews = () => (
@@ -25,8 +25,7 @@ const Reviews = () => (
     <Hero imgSrc={ReviewsHero} pageTitle="REVIEWS" />
     <Container>
       <ReviewContainer>
-        <h1>A list of reviews</h1>
-        <p>So many reviews to review!!</p>
+        <img style={{ width: `70%` }} src={ReviewGraphic} alt="alt" />
       </ReviewContainer>
     </Container>
   </Layout>

@@ -53,7 +53,7 @@ const AwardsContainer = styled.section`
 `;
 
 const AwardImage = styled.img`
-  max-width: 100px;
+  max-width: 10rem;
   padding: 0.66rem;
 `;
 
@@ -83,6 +83,7 @@ const IndexPage = () => (
     </div>
     <Hero imgSrc={AboutHero} pageTitle="Who we are" subTitle="What we do best" /> */}
     {/* <Hero imgSrc={HomeVideo} pageTitle="Who we are" subTitle="What we do best" /> */}
+
     <AwardsContainerContainer>
       <AwardsContainer>
         <AwardImage src={oneYear} alt="award" />
@@ -102,6 +103,7 @@ const IndexPage = () => (
     </AwardsContainerContainer>
 
     {/* <Hero imgSrc={ServicesHero} /> */}
+
     <Wrapper>
       <Container>
         <Row>

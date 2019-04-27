@@ -7,10 +7,10 @@ import Carousel from "react-bootstrap/Carousel";
 // import CarouselThree from "../../assets/images/carousel/carousel-3.jpg";
 // import CarouselFour from "../../assets/images/carousel/carousel-4.jpg";
 
-import RoomAddition from "../../assets/images/project-photos/ADDITION-The-Cedar-Project/K1_14763.jpg";
-import FullRemodeling from "../../assets/images/project-photos/BATHROOM-The-Parkwell-Project/K1_13828-HDR.jpg";
-import Kitchens from "../../assets/images/project-photos/KITCHEN-BATHROOM-The-Nelson-Project/K1_19487.jpg";
-import Bathroom from "../../assets/images/project-photos/BATHROOM-Castro-Valley/1Y6A1829.jpg";
+import Kitchens from "../../assets/images/project-photos/KITCHEN-The-Arezzo-Project/K1_15511-2.jpg";
+import Bathroom from "../../assets/images/project-photos/BATHROOM-B&A-The-Vizcaya-Project/image-23.jpg";
+import FullRemodeling from "../../assets/images/project-photos/FULL-Ben&Sandy-Wu//image-19.jpg";
+import RoomAddition from "../../assets/images/project-photos/BATHROOM-The-Parkwell-Project/K1_13872-HDR.jpg";
 
 const CarouselWrapper = styled.section`
   display: block;
@@ -24,18 +24,18 @@ const CarouselImg = styled.img`
 
 const CarouselComponent = () => (
   <CarouselWrapper>
-    <Carousel style={{ maxHeight: `95vh` }} controls="false">
-      <Carousel.Item>
-        <CarouselImg src={RoomAddition} alt="First slide" />
-      </Carousel.Item>
-      <Carousel.Item>
-        <CarouselImg src={FullRemodeling} alt="Third slide" />
-      </Carousel.Item>
+    <Carousel style={{ maxHeight: `90vh` }} controls="false">
       <Carousel.Item>
         <CarouselImg src={Kitchens} alt="Third slide" />
       </Carousel.Item>
       <Carousel.Item>
         <CarouselImg src={Bathroom} alt="Fourth slide" />
+      </Carousel.Item>
+      <Carousel.Item>
+        <CarouselImg src={FullRemodeling} alt="Third slide" />
+      </Carousel.Item>
+      <Carousel.Item>
+        <CarouselImg src={RoomAddition} alt="First slide" />
       </Carousel.Item>
     </Carousel>
   </CarouselWrapper>

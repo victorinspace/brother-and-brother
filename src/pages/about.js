@@ -17,7 +17,7 @@ const About = () => (
     <SEO title="About" />
     <Hero imgSrc={AboutHero} pageTitle="Who we are" subTitle="What we do best" />
     <Container>
-      <p>
+      <p className="lead">
         Brother and Brother Builders is a licensed, bonded and insured remodeling and building
         company servicing the Northern California area. We are family owned and have been in
         business for over 10 years. Our comprehensive experience will provide you with exceptional
