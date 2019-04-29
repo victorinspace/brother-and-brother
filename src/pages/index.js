@@ -8,6 +8,8 @@ import Container from "react-bootstrap/Container";
 import Row from "react-bootstrap/Row";
 import Card from "react-bootstrap/Card";
 
+import VideoComponent from "../components/video-component/VideoComponent.js";
+
 import RoomAddition from "../assets/images/project-photos/ADDITION-The-Cedar-Project/K1_14763.jpg";
 import FullRemodeling from "../assets/images/project-photos/BATHROOM-The-Parkwell-Project/K1_13828-HDR.jpg";
 import Kitchens from "../assets/images/project-photos/KITCHEN-BATHROOM-The-Nelson-Project/K1_19487.jpg";
@@ -30,6 +32,8 @@ import topRated from "../assets/images/awards/toprated.png";
 import yelp from "../assets/images/awards/yelp.png";
 
 // import HomeVideo from "../images/mp4/BBSlide-Large.mov";
+// import ResponsiveEmbed from "react-bootstrap/ResponsiveEmbed";
+// import YouTube from "react-youtube";
 
 // import MainHero from "../assets/images/project-photos/BATHROOM-Timothy-Smith-Project/img_8986.jpg";
 
@@ -37,7 +41,7 @@ import yelp from "../assets/images/awards/yelp.png";
 
 const AwardsContainerContainer = styled.section`
   max-width: 90vw;
-  margin: 0 auto;
+  margin: 95vh auto 0;
   padding: 3rem 0;
   display: block;
 `;
@@ -67,12 +71,104 @@ const Wrapper = styled.section`
   justify-content: center;
 `;
 
+// const VideoBackground = styled.div`
+//   background: #000;
+//   position: fixed;
+//   top: 0;
+//   bottom: 0;
+//   right: 0;
+//   left: 0;
+//   z-index: -99;
+//   &::after {
+//     display: block;
+//     content: "";
+//     position: absolute;
+//     top: 0;
+//     left: 0;
+//     width: 100%;
+//     height: 100%;
+//     z-index: 1;
+//     background: rgba(0, 0, 0, 0.75);
+//   }
+// `;
+
+// const VideoForeground = styled.div`
+//   position: absolute;
+//   top: 0;
+//   left: 0;
+//   width: 100%;
+//   height: 100%;
+//   pointer-events: none;
+
+//   @media (min-aspect-ratio: 16/9) {
+//     height: 300%;
+//     top: -100%;
+//   }
+
+//   @media (max-aspect-ratio: 16/9) {
+//     width: 300%;
+//     left: -100%;
+//   }
+// `;
+
+// _onReady(event) {
+//   // access to player in all event handlers via event.target
+//   // event.target.mute();
+// }
+
+// _onEnd(event) {
+//   event.target.playVideo();
+// }
+
+const videoOptions = {
+  playerVars: {
+    // https://developers.google.com/youtube/player_parameters
+    autoplay: 1,
+    controls: 0,
+    rel: 0,
+    showinfo: 0
+  }
+};
+
 const IndexPage = () => (
   <Layout>
-    <SEO title="Home" keywords={[`gatsby`, `application`, `react`]} />
-    {/* <Hero imgSrc={MainHero} pageTitle="Brother & Brother Builders" /> */}
-    <CarouselComponent />
-    {/* <div
+    <div style={{ backgroundColor: `white` }}>
+      <SEO title="Home" keywords={[`gatsby`, `application`, `react`]} />
+      {/* <Hero imgSrc={MainHero} pageTitle="Brother & Brother Builders" /> */}
+      {/* <CarouselComponent /> */}
+
+      <VideoComponent />
+
+      {/* <div style={{ width: `660`, height: `auto` }}>
+      <ResponsiveEmbed aspect="a16by9">
+        <embed src="https://www.youtube-nocookie.com/embed/DOxVWYulV-s?controls=0" />
+        <iframe
+          width="560"
+          height="315"
+          src="https://www.youtube-nocookie.com/embed/DOxVWYulV-s?controls=0"
+          frameborder="0"
+          allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+          allowfullscreen
+        />
+      </ResponsiveEmbed>
+    </div> */}
+
+      {/* <VideoBackground>
+      <VideoForeground>
+        <YouTube
+          videoId="Z6FPJOgfCkc"
+          opts={autoplay: `1`,
+      controls: `0`,
+      rel: 0,
+      showinfo: 0}
+          className="video-iframe"
+          // onReady={this._onReady}
+          // onEnd={this._onEnd}
+        />
+      </VideoForeground>
+    </VideoBackground> */}
+
+      {/* <div
       style={{
         width: "300px",
         height: "300px",
@@ -82,81 +178,79 @@ const IndexPage = () => (
       <VideoCover videoOptions={{ src: `../images/mp4/BBSlide-Large.mp4` }} />
     </div>
     <Hero imgSrc={AboutHero} pageTitle="Who we are" subTitle="What we do best" /> */}
-    {/* <Hero imgSrc={HomeVideo} pageTitle="Who we are" subTitle="What we do best" /> */}
+      {/* <Hero imgSrc={HomeVideo} pageTitle="Who we are" subTitle="What we do best" /> */}
+      <AwardsContainerContainer>
+        <AwardsContainer>
+          <AwardImage src={oneYear} alt="award" />
+          <AwardImage src={fiftyReviews} alt="award" />
+          <AwardImage src={awardTwo} alt="award" />
+          <AwardImage src={awardThree} alt="award" />
+          <AwardImage src={awardFour} alt="award" />
+          <AwardImage src={awardFive} alt="award" />
+          <AwardImage src={homeAdvisor2017} alt="award" />
+          <AwardImage src={homeAdvisor2018} alt="award" />
+          <AwardImage src={elite} alt="award" />
+          <AwardImage src={buildZoom} alt="award" />
+          <AwardImage src={topRated} alt="award" />
+          <AwardImage src={elite} alt="award" />
+          <AwardImage src={yelp} alt="award" />
+        </AwardsContainer>
+      </AwardsContainerContainer>
+      {/* <Hero imgSrc={ServicesHero} /> */}
+      <Wrapper>
+        <Container>
+          <Row>
+            <Card border="light" style={{ width: `25.5rem`, margin: `0.45rem` }}>
+              <Card.Img variant="top" src={FullRemodeling} alt="Full Remodeling" />
+              <Card.Body>
+                <Card.Title>Full Remodeling</Card.Title>
+                <Card.Text>
+                  Whether it’s a new addition to the family or desired expansion Brother and Brother
+                  Builders has the experience to guide through every step of the process.
+                </Card.Text>
+              </Card.Body>
+            </Card>
 
-    <AwardsContainerContainer>
-      <AwardsContainer>
-        <AwardImage src={oneYear} alt="award" />
-        <AwardImage src={fiftyReviews} alt="award" />
-        <AwardImage src={awardTwo} alt="award" />
-        <AwardImage src={awardThree} alt="award" />
-        <AwardImage src={awardFour} alt="award" />
-        <AwardImage src={awardFive} alt="award" />
-        <AwardImage src={homeAdvisor2017} alt="award" />
-        <AwardImage src={homeAdvisor2018} alt="award" />
-        <AwardImage src={elite} alt="award" />
-        <AwardImage src={buildZoom} alt="award" />
-        <AwardImage src={topRated} alt="award" />
-        <AwardImage src={elite} alt="award" />
-        <AwardImage src={yelp} alt="award" />
-      </AwardsContainer>
-    </AwardsContainerContainer>
+            <Card border="light" style={{ width: `25.5rem`, margin: `0.45rem` }}>
+              <Card.Img variant="top" src={RoomAddition} alt="Room Additions" />
+              <Card.Body>
+                <Card.Title>Room Additions</Card.Title>
+                <Card.Text>
+                  Whether it’s a new addition to the family or desired expansion Brother and Brother
+                  Builders has the experience to guide through every step of the process.
+                </Card.Text>
+              </Card.Body>
+            </Card>
+          </Row>
 
-    {/* <Hero imgSrc={ServicesHero} /> */}
+          <Row>
+            <Card border="light" style={{ width: `25.5rem`, margin: `0.45rem` }}>
+              <Card.Img variant="top" src={Kitchens} alt="Kitchens" />
+              <Card.Body>
+                <Card.Title>Kitchens</Card.Title>
+                <Card.Text>
+                  Brother and Brother Builders understands that the kitchen is the heart of the
+                  home. It is where memories are created. The design requires extensive planning and
+                  is one of our specialties.
+                </Card.Text>
+              </Card.Body>
+            </Card>
 
-    <Wrapper>
-      <Container>
-        <Row>
-          <Card border="light" style={{ width: `25.5rem`, margin: `0.45rem` }}>
-            <Card.Img variant="top" src={FullRemodeling} alt="Full Remodeling" />
-            <Card.Body>
-              <Card.Title>Full Remodeling</Card.Title>
-              <Card.Text>
-                Whether it’s a new addition to the family or desired expansion Brother and Brother
-                Builders has the experience to guide through every step of the process.
-              </Card.Text>
-            </Card.Body>
-          </Card>
-
-          <Card border="light" style={{ width: `25.5rem`, margin: `0.45rem` }}>
-            <Card.Img variant="top" src={RoomAddition} alt="Room Additions" />
-            <Card.Body>
-              <Card.Title>Room Additions</Card.Title>
-              <Card.Text>
-                Whether it’s a new addition to the family or desired expansion Brother and Brother
-                Builders has the experience to guide through every step of the process.
-              </Card.Text>
-            </Card.Body>
-          </Card>
-        </Row>
-
-        <Row>
-          <Card border="light" style={{ width: `25.5rem`, margin: `0.45rem` }}>
-            <Card.Img variant="top" src={Kitchens} alt="Kitchens" />
-            <Card.Body>
-              <Card.Title>Kitchens</Card.Title>
-              <Card.Text>
-                Brother and Brother Builders understands that the kitchen is the heart of the home.
-                It is where memories are created. The design requires extensive planning and is one
-                of our specialties.
-              </Card.Text>
-            </Card.Body>
-          </Card>
-
-          <Card border="light" style={{ width: `25.5rem`, margin: `0.45rem` }}>
-            <Card.Img variant="top" src={Bathroom} alt="Bathroom" />
-            <Card.Body>
-              <Card.Title>Bathroom</Card.Title>
-              <Card.Text>
-                Brother and Brother Builders will transform your old ordinary bathroom to a custom
-                spa. From tile to fixtures we will help you make the right choices with exceptional
-                design.
-              </Card.Text>
-            </Card.Body>
-          </Card>
-        </Row>
-      </Container>
-    </Wrapper>
+            <Card border="light" style={{ width: `25.5rem`, margin: `0.45rem` }}>
+              <Card.Img variant="top" src={Bathroom} alt="Bathroom" />
+              <Card.Body>
+                <Card.Title>Bathroom</Card.Title>
+                <Card.Text>
+                  Brother and Brother Builders will transform your old ordinary bathroom to a custom
+                  spa. From tile to fixtures we will help you make the right choices with
+                  exceptional design.
+                </Card.Text>
+              </Card.Body>
+            </Card>
+          </Row>
+        </Container>
+      </Wrapper>
+    </div>
   </Layout>
 );
 

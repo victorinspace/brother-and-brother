@@ -4,7 +4,7 @@ import { FaFacebookSquare, FaInstagram } from "react-icons/fa";
 import PropTypes from "prop-types";
 
 const Container = styled.footer`
-  margin: 3rem auto 0;
+  margin: 0 auto;
   display: flex;
   flex-direction: column;
   align-items: center;
