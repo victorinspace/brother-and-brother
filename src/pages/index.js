@@ -3,10 +3,14 @@ import Layout from "../components/layout";
 import Hero from "../components/HeroComponent/HeroComponent.js";
 import styled from "styled-components";
 import SEO from "../components/seo";
+import Reviews from "./ReviewsImg";
 import "bootstrap/dist/css/bootstrap.css";
 import Container from "react-bootstrap/Container";
 import Row from "react-bootstrap/Row";
 import Card from "react-bootstrap/Card";
+
+import { MdStar, MdStarHalf } from "react-icons/md";
+import { FaAward, FaHome, FaBriefcase } from "react-icons/fa";
 
 import VideoComponent from "../components/video-component/VideoComponent.js";
 
@@ -29,6 +33,11 @@ import elite from "../assets/images/awards/elite.png";
 import buildZoom from "../assets/images/awards/t10pl2.png";
 import topRated from "../assets/images/awards/toprated.png";
 import yelp from "../assets/images/awards/yelp.png";
+
+import FacebookIcon from "../assets/images/BB-Review-Images/fb.png";
+import HomeAdvisorIcon from "../assets/images/BB-Review-Images/ha.png";
+import HouzzIcon from "../assets/images/BB-Review-Images/hz.png";
+import YelpIcon from "../assets/images/BB-Review-Images/yelp.png";
 
 // import MainHero from "../assets/images/project-photos/BATHROOM-Timothy-Smith-Project/img_8986.jpg";
 
@@ -74,6 +83,20 @@ const Wrapper = styled.section`
   justify-content: center;
 `;
 
+const ReviewIconsContainer = styled.div`
+  display: flex;
+  justify-content: space-between;
+`;
+
+const ReviewIconsBox = styled.div`
+  padding: 3rem;
+`;
+
+const ReviewStarsContainer = styled.div`
+  font-size: 1.3rem;
+  color: #9caa49;
+`;
+
 const IndexPage = () => (
   <Layout>
     <div style={{ backgroundColor: `white` }}>
@@ -86,21 +109,33 @@ const IndexPage = () => (
       </VideoWrapper>
 
       <AwardsContainerContainer>
+        <h2 style={{ margin: `0 10%` }}>
+          Awards and Recognition {` `} <FaAward />
+        </h2>
         <AwardsContainer>
-          <AwardImage src={oneYear} alt="award" />
-          <AwardImage src={fiftyReviews} alt="award" />
-          <AwardImage src={awardTwo} alt="award" />
-          <AwardImage src={awardFour} alt="award" />
-          <AwardImage src={awardFive} alt="award" />
-          <AwardImage src={homeAdvisor2017} alt="award" />
-          <AwardImage src={homeAdvisor2018} alt="award" />
-          <AwardImage src={elite} alt="award" />
-          <AwardImage src={buildZoom} alt="award" />
-          <AwardImage src={topRated} alt="award" />
-          <AwardImage src={elite} alt="award" />
-          <AwardImage src={yelp} alt="award" />
+          <div>
+            <AwardImage src={oneYear} alt="award" />
+            <AwardImage src={fiftyReviews} alt="award" />
+            <AwardImage src={awardTwo} alt="award" />
+            <AwardImage src={awardFour} alt="award" />
+            <AwardImage src={awardFive} alt="award" />
+            <AwardImage src={homeAdvisor2017} alt="award" />
+          </div>
+          <div>
+            <AwardImage src={homeAdvisor2018} alt="award" />
+            <AwardImage src={elite} alt="award" />
+            <AwardImage src={buildZoom} alt="award" />
+            <AwardImage src={topRated} alt="award" />
+            <AwardImage src={elite} alt="award" />
+            <AwardImage src={yelp} alt="award" />
+          </div>
         </AwardsContainer>
       </AwardsContainerContainer>
+
+      <h2 style={{ margin: `0 10%` }}>
+        Our Services {` `}
+        <FaHome />{" "}
+      </h2>
 
       <Wrapper>
         <Container>
@@ -155,6 +190,55 @@ const IndexPage = () => (
           </Row>
         </Container>
       </Wrapper>
+
+      <Reviews />
+
+      <ReviewIconsContainer>
+        <ReviewIconsBox>
+          <img src={FacebookIcon} alt="Facebook" />
+          <ReviewStarsContainer>
+            <MdStar />
+            <MdStar />
+            <MdStar />
+            <MdStar />
+            <MdStar />
+          </ReviewStarsContainer>
+        </ReviewIconsBox>
+        <ReviewIconsBox>
+          <img src={YelpIcon} alt="Yelp" />
+          <ReviewStarsContainer>
+            <MdStar />
+            <MdStar />
+            <MdStar />
+            <MdStar />
+            <MdStarHalf />
+          </ReviewStarsContainer>
+        </ReviewIconsBox>
+        <ReviewIconsBox>
+          <img src={HouzzIcon} alt="Houzz" />
+          <ReviewStarsContainer>
+            <MdStar />
+            <MdStar />
+            <MdStar />
+            <MdStar />
+            <MdStar />
+          </ReviewStarsContainer>
+        </ReviewIconsBox>
+        <ReviewIconsBox>
+          <img src={HomeAdvisorIcon} alt="Home Advisor" />
+          <ReviewStarsContainer>
+            <MdStar />
+            <MdStar />
+            <MdStar />
+            <MdStar />
+            <MdStarHalf />
+          </ReviewStarsContainer>
+        </ReviewIconsBox>
+      </ReviewIconsContainer>
+
+      <h2 style={{ margin: `0 10%` }}>
+        Our Projects {` `} <FaBriefcase />
+      </h2>
       <CarouselComponent />
     </div>
   </Layout>

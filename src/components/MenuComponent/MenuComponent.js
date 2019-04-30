@@ -3,6 +3,8 @@ import PropTypes from "prop-types";
 
 import styled from "styled-components";
 import { FaPhone } from "react-icons/fa";
+import { FaCalendarAlt } from "react-icons/fa";
+
 import Navbar from "react-bootstrap/Navbar";
 import Nav from "react-bootstrap/Nav";
 import NavDropdown from "react-bootstrap/NavDropdown";
@@ -28,17 +30,38 @@ const MenuComponent = ({ data }) => (
         <Nav.Link href="/about">About</Nav.Link>
         <Nav.Link href="/services">Services</Nav.Link>
         <Nav.Link href="/portfolio">Portfolio</Nav.Link>
-        <Nav.Link href="/reviews">Reviews</Nav.Link>
+        {/* <Nav.Link href="/reviews">Reviews</Nav.Link> */}
         <Nav.Link href="/contact">Contact</Nav.Link>
       </Nav>
     </Navbar.Collapse>
 
     <Nav>
       <a href="tel:+1+888+412+2632">
-        <Button style={{ backgroundColor: `#9caa49`, border: `none` }}>
+        <Button
+          style={{
+            backgroundColor: `#9caa49`,
+            border: `none`,
+            borderRadius: `0`,
+            margin: `0.15rem`
+          }}
+        >
           <FaPhone />
           {` `}
           888.412.2632
+        </Button>
+      </a>
+      <a href="/contact">
+        <Button
+          style={{
+            backgroundColor: `#f7931f`,
+            border: `none`,
+            borderRadius: `0`,
+            margin: `0.15rem`
+          }}
+        >
+          <FaCalendarAlt />
+          {` `}
+          Book Appointment
         </Button>
       </a>
     </Nav>

@@ -15,7 +15,7 @@ import RoomAddition from "../../assets/images/project-photos/BATHROOM-The-Parkwe
 const CarouselWrapper = styled.section`
   display: block;
   overflow: hidden;
-  padding-top: 115px;
+  padding: 2rem 0 0;
 `;
 
 const CarouselImg = styled.img`
