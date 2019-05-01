@@ -76,14 +76,14 @@ const Portfolio = () => (
             </Card>
           </Link>
 
-          <Link to="#">
+          <a href="/portfolios/additions/Additions">
             <Card border="light" style={{ width: `19.5rem`, margin: `0.75rem` }}>
               <Card.Img variant="top" src={Kitchens} alt="Kitchens" />
               <Card.Body>
                 <Card.Title style={{ fontSize: `1.5em` }}>Room Additions</Card.Title>
               </Card.Body>
             </Card>
-          </Link>
+          </a>
         </Row>
       </Container>
     </Wrapper>

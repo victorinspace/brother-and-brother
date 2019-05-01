@@ -35,7 +35,7 @@ class VideoComponent extends React.Component {
       <div className="video-background">
         <div className="video-foreground">
           <YouTube
-            videoId="DOxVWYulV-s"
+            videoId="mVJc9RtqPRY"
             opts={videoOptions}
             className="video-iframe"
             onReady={this.videoOnReady}
