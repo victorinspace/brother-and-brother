@@ -9,10 +9,10 @@ const Container = styled.footer`
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  background-color: #333;
-  color: #fff;
+  background-color: #fff;
+  color: #333;
   padding: 60px 0;
-  background-image: linear-gradient(to top, transparent, #0c0c0c);
+  background-image: linear-gradient(to top, transparent, #eee);
 `;
 
 const CopyrightWrapper = styled.div`
@@ -25,7 +25,7 @@ const SocialWrapper = styled.div`
 `;
 
 const SocialLink = styled.a`
-  padding: 10px 15px;
+  padding: 10px 20px;
   font-size: 2em;
   color: #9caa49;
   :hover {
@@ -51,7 +51,7 @@ const Address = styled.div`
 `;
 
 const AddressHeader = styled.h3`
-  color: #ccc;
+  color: rgba(0, 0, 0, 0.5);
 `;
 
 const FooterComponent = ({ siteTitle }) => (
@@ -69,10 +69,6 @@ const FooterComponent = ({ siteTitle }) => (
       <Address>
         <AddressHeader>SAN JOSE</AddressHeader>
         <p>1630 Oakland Rd #A211 San Jose, CA 95131 </p>
-      </Address>
-      <Address>
-        <AddressHeader>WALNUT CREEK</AddressHeader>
-        <p>1295 Boulevard Way #J Walnut Creek, CA 94595</p>
       </Address>
     </AddressContainer>
 

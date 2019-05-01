@@ -18,7 +18,7 @@ const LogoImage = styled.img`
 `;
 
 const MenuComponent = ({ data }) => (
-  <Navbar collapseOnSelect expand="lg" bg="dark" variant="dark" fixed="top">
+  <Navbar collapseOnSelect expand="lg" bg="light" fixed="top">
     <Navbar.Brand href="/">
       <LogoImage src={HeaderLogo} />
     </Navbar.Brand>
@@ -41,7 +41,6 @@ const MenuComponent = ({ data }) => (
           style={{
             backgroundColor: `#9caa49`,
             border: `none`,
-            borderRadius: `0`,
             margin: `0.15rem`
           }}
         >
@@ -55,7 +54,6 @@ const MenuComponent = ({ data }) => (
           style={{
             backgroundColor: `#f7931f`,
             border: `none`,
-            borderRadius: `0`,
             margin: `0.15rem`
           }}
         >
