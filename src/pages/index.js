@@ -191,6 +191,8 @@ const IndexPage = () => (
         </Container>
       </Wrapper>
 
+      <Reviews />
+
       <ReviewIconsContainer>
         <ReviewIconsBox>
           <img src={FacebookIcon} alt="Facebook" />
