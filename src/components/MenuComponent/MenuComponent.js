@@ -2,7 +2,7 @@ import React from "react";
 import PropTypes from "prop-types";
 
 import styled from "styled-components";
-import { FaPhone } from "react-icons/fa";
+import { FaPhone, FaHouzz, FaFacebookSquare, FaYelp, FaInstagram } from "react-icons/fa";
 import { FaCalendarAlt } from "react-icons/fa";
 
 import Navbar from "react-bootstrap/Navbar";
@@ -18,7 +18,7 @@ const LogoImage = styled.img`
 `;
 
 const MenuComponent = ({ data }) => (
-  <Navbar collapseOnSelect expand="lg" bg="dark" variant="dark" fixed="top">
+  <Navbar collapseOnSelect expand="lg" bg="light" fixed="top">
     <Navbar.Brand href="/">
       <LogoImage src={HeaderLogo} />
     </Navbar.Brand>
@@ -41,13 +41,10 @@ const MenuComponent = ({ data }) => (
           style={{
             backgroundColor: `#9caa49`,
             border: `none`,
-            borderRadius: `0`,
             margin: `0.15rem`
           }}
         >
           <FaPhone />
-          {` `}
-          888.412.2632
         </Button>
       </a>
       <a href="/contact">
@@ -55,15 +52,18 @@ const MenuComponent = ({ data }) => (
           style={{
             backgroundColor: `#f7931f`,
             border: `none`,
-            borderRadius: `0`,
             margin: `0.15rem`
           }}
         >
           <FaCalendarAlt />
-          {` `}
-          Book Appointment
         </Button>
       </a>
+    </Nav>
+    <Nav style={{ color: `black` }}>
+      <FaHouzz />
+      <FaFacebookSquare />
+      <FaYelp />
+      <FaInstagram />
     </Nav>
   </Navbar>
 );
