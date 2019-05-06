@@ -10,17 +10,26 @@ import YelpIcon from "../../assets/images/BB-Review-Images/yelp.png";
 const ReviewIconsContainer = styled.div`
   display: flex;
   justify-content: space-between;
-  max-width: 90%;
+  max-width: 80%;
   margin: 0 auto;
+  padding: 0 0 5rem;
 `;
 
 const ReviewIconsBox = styled.div`
-  padding: 3rem;
+  ${"" /* padding: 0.3rem; */}
+  max-width: 25%;
+  ${"" /* margin: 0.5rem; */}
+  margin: 0 auto;
+  ${"" /* border: 1px solid red; */}
 `;
 
 const ReviewStarsContainer = styled.div`
   font-size: 1.3rem;
   color: #9caa49;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  ${"" /* border: 1px solid blue; */}
 `;
 
 const OurReviews = () => (

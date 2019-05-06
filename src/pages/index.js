@@ -17,7 +17,7 @@ const IndexPage = () => (
     <div style={{ backgroundColor: `white` }}>
       <SEO title="Home" keywords={[`gatsby`, `application`, `react`]} />
 
-      <VideoComponent className="video-component" />
+      {/* <VideoComponent className="video-component" /> */}
       <OurProjects />
       <OurServices />
       <OurAwards />
