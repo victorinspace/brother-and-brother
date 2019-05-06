@@ -14,7 +14,7 @@ import OurReviews from "../components/OurReviews/OurReviews.js";
 
 const IndexPage = () => (
   <Layout>
-    <div style={{}}>
+    <div>
       <SEO title="Home" keywords={[`remodeling`, `building`, `react`]} />
 
       {/* <VideoComponent className="video-component" /> */}

@@ -1,8 +1,9 @@
 import React from "react";
 import styled from "styled-components";
+import { FaFacebookSquare, FaInstagram } from "react-icons/fa";
 import PropTypes from "prop-types";
-import { FaFacebookSquare, FaInstagram, FaRegBuilding } from "react-icons/fa";
-import BuildingImage from "../../assets/images/company-placeholder/downtown.jpg";
+
+import Building from "../../assets/images/company-placeholder/downtown.jpg";
 
 const Container = styled.footer`
   margin: 0 auto;
@@ -10,8 +11,8 @@ const Container = styled.footer`
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  background-color: #fff;
-  color: #333;
+  background-color: #f8f9fa;
+  color: rgba(0, 0, 0, 0.5);
   padding: 60px 0;
   background-image: linear-gradient(to top, transparent, #eee);
 `;
@@ -26,7 +27,7 @@ const SocialWrapper = styled.div`
 `;
 
 const SocialLink = styled.a`
-  padding: 10px 20px;
+  padding: 10px 15px;
   font-size: 2em;
   color: #9caa49;
   :hover {
@@ -42,7 +43,7 @@ const AddressContainer = styled.div`
   padding: 10px;
 `;
 
-const BuildingImg = styled.img`
+const BuildingImage = styled.img`
   max-width: 20%;
 `;
 
@@ -55,9 +56,7 @@ const Address = styled.div`
   margin: 0 20px;
 `;
 
-const AddressHeader = styled.h3`
-  color: rgba(0, 0, 0, 0.5);
-`;
+const AddressHeader = styled.h3``;
 
 const FooterComponent = ({ siteTitle }) => (
   <Container>
@@ -71,12 +70,16 @@ const FooterComponent = ({ siteTitle }) => (
     </SocialWrapper>
 
     <AddressContainer>
-      <BuildingImg src={BuildingImage} alt="Building" />
+      <BuildingImage src={Building} alt="Downtown San Jose" />
       <Address>
-        <AddressHeader>SAN JOSE</AddressHeader>
-        <p>1630 Oakland Rd #A211 San Jose, CA 95131 </p>
-        <p>info@brotherandbrotherca.com</p>
-        <p>888.412.2632</p>
+        <AddressHeader>WALNUT CREEK</AddressHeader>
+        <p>1295 Boulevard Way #J Walnut Creek, CA 94595</p>
+        <a style={{ color: `#9caa49` }} href="mailto:info@brotherandbrotherca.com">
+          info@brotherandbrotherca.com
+        </a>
+        <a style={{ color: `#9caa49` }} href="tel:+1+888+412+2632">
+          888.412.2632
+        </a>
         <p style={{ fontWeight: `bold` }}>
           Servicing area: Oakland, South Bay, East Bay, Peninsula
         </p>
@@ -84,7 +87,7 @@ const FooterComponent = ({ siteTitle }) => (
     </AddressContainer>
 
     <CopyrightWrapper>
-      © 2012-{new Date().getFullYear()} |{` `}
+      © 2017-{new Date().getFullYear()} |{` `}
       <a style={{ color: `#9caa49` }} href="http://www.brotherandbrotherbuilders.com/">
         Brother and Brother Builders
       </a>
