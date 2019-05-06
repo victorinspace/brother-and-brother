@@ -6,9 +6,15 @@ import SEO from "../components/seo";
 import Card from "react-bootstrap/Card";
 import Container from "react-bootstrap/Container";
 import Row from "react-bootstrap/Row";
+import Carousel from "react-bootstrap/Carousel";
+
+// Full Remodeling Carousl Items
+import FullOne from "../assets/images/project-photos/FULL-The-Silkwood-Project/K1_12863.jpg";
+import FullTwo from "../assets/images/project-photos/FULL-The-Silkwood-Project/K1_12980.jpg";
+import FullThree from "../assets/images/project-photos/FULL-The-Silkwood-Project/K1_13034.jpg";
+import FullFour from "../assets/images/project-photos/FULL-The-Silkwood-Project/K1_12958.jpg";
 
 import RoomAddition from "../assets/images/project-photos/ADDITION-The-Cedar-Project/K1_14763.jpg";
-import FullRemodeling from "../assets/images/project-photos/BATHROOM-The-Parkwell-Project/K1_13828-HDR.jpg";
 import Kitchens from "../assets/images/project-photos/KITCHEN-BATHROOM-The-Nelson-Project/K1_19487.jpg";
 import Bathroom from "../assets/images/project-photos/BATHROOM-Castro-Valley/1Y6A1829.jpg";
 
@@ -31,8 +37,27 @@ const Services = () => (
     <Wrapper>
       <Container>
         <Row>
-          <Card border="light" style={{ width: `25.5rem`, margin: `0.45rem` }}>
-            <Card.Img variant="top" src={FullRemodeling} alt="Full Remodeling" />
+          <Card
+            border="light"
+            style={{
+              width: `25.5rem`,
+              margin: `0.45rem`
+            }}
+          >
+            <Carousel>
+              <Carousel.Item>
+                <img src={FullOne} alt="full remodel" />
+              </Carousel.Item>
+              <Carousel.Item>
+                <img src={FullTwo} alt="full remodel" />
+              </Carousel.Item>
+              <Carousel.Item>
+                <img src={FullThree} alt="full remodel" />
+              </Carousel.Item>
+              <Carousel.Item>
+                <img src={FullFour} alt="full remodel" />
+              </Carousel.Item>
+            </Carousel>
             <Card.Body>
               <Card.Title>Full Remodeling</Card.Title>
               <Card.Text>
