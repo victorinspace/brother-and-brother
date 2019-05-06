@@ -7,10 +7,15 @@ import HomeAdvisorIcon from "../../assets/images/BB-Review-Images/ha.png";
 import HouzzIcon from "../../assets/images/BB-Review-Images/hz.png";
 import YelpIcon from "../../assets/images/BB-Review-Images/yelp.png";
 
+<<<<<<< HEAD
 const ReviewIconsContainer = styled.div`
   display: flex;
   justify-content: space-between;
   max-width: 80%;
+=======
+const AwardsContainerContainer = styled.section`
+  max-width: 90%;
+>>>>>>> parent of 128212a... Padding to top of projects in Home page.
   margin: 0 auto;
   padding: 0 0 5rem;
 `;

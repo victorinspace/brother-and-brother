@@ -14,7 +14,11 @@ const CarouselImg = styled.img`
 `;
 
 const OurProjects = () => (
+<<<<<<< HEAD
   <div style={{ paddingTop: `120px` }}>
+=======
+  <div>
+>>>>>>> parent of 128212a... Padding to top of projects in Home page.
     <h2>
       Our Projects {` `} <FaBriefcase />
     </h2>
