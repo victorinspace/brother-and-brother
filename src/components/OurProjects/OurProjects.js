@@ -14,7 +14,7 @@ const CarouselImg = styled.img`
 `;
 
 const OurProjects = () => (
-  <div style={{ border: `2px solid red`, paddingTop: `120px` }}>
+  <div style={{ paddingTop: `120px` }}>
     <h2>
       Our Projects {` `} <FaBriefcase />
     </h2>
