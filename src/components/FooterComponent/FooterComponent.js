@@ -11,10 +11,10 @@ const Container = styled.footer`
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  background-color: #333;
-  color: #fff;
+  background-color: #f8f9fa;
+  color: rgba(0, 0, 0, 0.5);
   padding: 60px 0;
-  background-image: linear-gradient(to top, transparent, #0c0c0c);
+  background-image: linear-gradient(to top, transparent, #eee);
 `;
 
 const CopyrightWrapper = styled.div`
