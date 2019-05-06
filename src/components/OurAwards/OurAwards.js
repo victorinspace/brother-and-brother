@@ -15,7 +15,7 @@ import topRated from "../../assets/images/awards/toprated.png";
 import yelp from "../../assets/images/awards/yelp.png";
 
 const AwardsContainerContainer = styled.section`
-  max-width: 90%;
+  max-width: 800px;
   margin: 0 auto;
   padding: 3rem 0;
   display: block;
