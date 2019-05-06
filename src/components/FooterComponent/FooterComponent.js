@@ -56,9 +56,7 @@ const Address = styled.div`
   margin: 0 20px;
 `;
 
-const AddressHeader = styled.h3`
-  color: #ccc;
-`;
+const AddressHeader = styled.h3``;
 
 const FooterComponent = ({ siteTitle }) => (
   <Container>
