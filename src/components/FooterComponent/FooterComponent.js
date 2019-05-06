@@ -3,6 +3,8 @@ import styled from "styled-components";
 import { FaFacebookSquare, FaInstagram } from "react-icons/fa";
 import PropTypes from "prop-types";
 
+import Building from "../../assets/images/company-placeholder/downtown.jpg";
+
 const Container = styled.footer`
   margin: 0 auto;
   display: flex;
@@ -41,6 +43,10 @@ const AddressContainer = styled.div`
   padding: 10px;
 `;
 
+const BuildingImage = styled.img`
+  max-width: 20%;
+`;
+
 const Address = styled.div`
   display: flex;
   flex-direction: column;
@@ -66,13 +72,19 @@ const FooterComponent = ({ siteTitle }) => (
     </SocialWrapper>
 
     <AddressContainer>
-      <Address>
-        <AddressHeader>SAN JOSE</AddressHeader>
-        <p>1630 Oakland Rd #A211 San Jose, CA 95131 </p>
-      </Address>
+      <BuildingImage src={Building} alt="Downtown San Jose" />
       <Address>
         <AddressHeader>WALNUT CREEK</AddressHeader>
         <p>1295 Boulevard Way #J Walnut Creek, CA 94595</p>
+        <a style={{ color: `#9caa49` }} href="mailto:info@brotherandbrotherca.com">
+          info@brotherandbrotherca.com
+        </a>
+        <a style={{ color: `#9caa49` }} href="tel:+1+888+412+2632">
+          888.412.2632
+        </a>
+        <p style={{ fontWeight: `bold` }}>
+          Servicing area: Oakland, South Bay, East Bay, Peninsula
+        </p>
       </Address>
     </AddressContainer>
 
