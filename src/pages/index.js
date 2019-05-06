@@ -45,80 +45,16 @@ import YelpIcon from "../assets/images/BB-Review-Images/yelp.png";
 
 // import MainHero from "../assets/images/project-photos/BATHROOM-Timothy-Smith-Project/img_8986.jpg";
 
-const VideoWrapper = styled.div`
-  @media (max-width: 800px) {
-    ${"" /* height: 100vh;
-    width: auto; */}
-    height: 0;
-    display: none;
-    background: 5px solid blue;
-  }
-`;
-
-const AwardsContainerContainer = styled.section`
-  max-width: 90vw;
-  margin: 95vh auto 0;
-  padding: 3rem 0;
-  display: block;
-`;
-
-const AwardsContainer = styled.section`
-  margin: 0 auto;
-  padding: 1rem 0;
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  flex-wrap: wrap;
-  justify-content: space-between;
-`;
-
-const AwardImage = styled.img`
-  max-width: 10rem;
-  padding: 0.66rem;
-`;
-
-const Wrapper = styled.section`
-  max-width: 1000px;
-  margin: 2rem auto 0;
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  align-items: center;
-  justify-content: center;
-`;
-
-const ReviewIconsContainer = styled.div`
-  display: flex;
-  justify-content: space-between;
-`;
-
-const ReviewIconsBox = styled.div`
-  padding: 3rem;
-`;
-
-const ReviewStarsContainer = styled.div`
-  font-size: 1.3rem;
-  color: #9caa49;
-`;
-
 const IndexPage = () => (
   <Layout>
     <div style={{ backgroundColor: `white` }}>
       <SEO title="Home" keywords={[`gatsby`, `application`, `react`]} />
 
-      {/* <Hero imgSrc={MainHero} pageTitle="Brother & Brother Builders" /> */}
-
-      <VideoWrapper>
-        <VideoComponent className="video-component" />
-      </VideoWrapper>
-
-      <OurAwards />
-
-      <OurServices />
-
-      <OurReviews />
-
+      <VideoComponent className="video-component" />
       <OurProjects />
+      <OurServices />
+      <OurAwards />
+      <OurReviews />
     </div>
   </Layout>
 );
