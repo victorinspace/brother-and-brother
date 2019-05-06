@@ -12,14 +12,18 @@ import Card from "react-bootstrap/Card";
 import { MdStar, MdStarHalf } from "react-icons/md";
 import { FaAward, FaHome, FaBriefcase } from "react-icons/fa";
 
+// Component Imports
 import VideoComponent from "../components/video-component/VideoComponent.js";
+import OurProjects from "../components/OurProjects/OurProjects.js";
+import OurServices from "../components/OurServices/OurServices.js";
+import OurAwards from "../components/OurAwards/OurAwards.js";
+import OurReviews from "../components/OurReviews/OurReviews.js";
 
 import RoomAddition from "../assets/images/project-photos/ADDITION-The-Cedar-Project/K1_14763.jpg";
 import FullRemodeling from "../assets/images/project-photos/BATHROOM-The-Parkwell-Project/K1_13828-HDR.jpg";
 import Kitchens from "../assets/images/project-photos/KITCHEN-BATHROOM-The-Nelson-Project/K1_19487.jpg";
 import Bathroom from "../assets/images/project-photos/BATHROOM-Castro-Valley/1Y6A1829.jpg";
 
-import CarouselComponent from "../components/carousel/CarouselComponent";
 // import Awards from "../components/awards/Awards";
 
 import oneYear from "../assets/images/awards/1year.png";
@@ -108,138 +112,13 @@ const IndexPage = () => (
         <VideoComponent className="video-component" />
       </VideoWrapper>
 
-      <AwardsContainerContainer>
-        <h2 style={{ margin: `0 10%` }}>
-          Awards and Recognition {` `} <FaAward />
-        </h2>
-        <AwardsContainer>
-          <div>
-            <AwardImage src={oneYear} alt="award" />
-            <AwardImage src={fiftyReviews} alt="award" />
-            <AwardImage src={awardTwo} alt="award" />
-            <AwardImage src={awardFour} alt="award" />
-            <AwardImage src={awardFive} alt="award" />
-            <AwardImage src={homeAdvisor2017} alt="award" />
-          </div>
-          <div>
-            <AwardImage src={homeAdvisor2018} alt="award" />
-            <AwardImage src={elite} alt="award" />
-            <AwardImage src={buildZoom} alt="award" />
-            <AwardImage src={topRated} alt="award" />
-            <AwardImage src={elite} alt="award" />
-            <AwardImage src={yelp} alt="award" />
-          </div>
-        </AwardsContainer>
-      </AwardsContainerContainer>
+      <OurAwards />
 
-      <h2 style={{ margin: `0 10%` }}>
-        Our Services {` `}
-        <FaHome />{" "}
-      </h2>
+      <OurServices />
 
-      <Wrapper>
-        <Container>
-          <Row>
-            <Card border="light" style={{ width: `25.5rem`, margin: `0.45rem` }}>
-              <Card.Img variant="top" src={FullRemodeling} alt="Full Remodeling" />
-              <Card.Body>
-                <Card.Title>Full Remodeling</Card.Title>
-                <Card.Text>
-                  Whether it’s a new addition to the family or desired expansion Brother and Brother
-                  Builders has the experience to guide through every step of the process.
-                </Card.Text>
-              </Card.Body>
-            </Card>
+      <OurReviews />
 
-            <Card border="light" style={{ width: `25.5rem`, margin: `0.45rem` }}>
-              <Card.Img variant="top" src={RoomAddition} alt="Room Additions" />
-              <Card.Body>
-                <Card.Title>Room Additions</Card.Title>
-                <Card.Text>
-                  Whether it’s a new addition to the family or desired expansion Brother and Brother
-                  Builders has the experience to guide through every step of the process.
-                </Card.Text>
-              </Card.Body>
-            </Card>
-          </Row>
-
-          <Row>
-            <Card border="light" style={{ width: `25.5rem`, margin: `0.45rem` }}>
-              <Card.Img variant="top" src={Kitchens} alt="Kitchens" />
-              <Card.Body>
-                <Card.Title>Kitchens</Card.Title>
-                <Card.Text>
-                  Brother and Brother Builders understands that the kitchen is the heart of the
-                  home. It is where memories are created. The design requires extensive planning and
-                  is one of our specialties.
-                </Card.Text>
-              </Card.Body>
-            </Card>
-
-            <Card border="light" style={{ width: `25.5rem`, margin: `0.45rem` }}>
-              <Card.Img variant="top" src={Bathroom} alt="Bathroom" />
-              <Card.Body>
-                <Card.Title>Bathroom</Card.Title>
-                <Card.Text>
-                  Brother and Brother Builders will transform your old ordinary bathroom to a custom
-                  spa. From tile to fixtures we will help you make the right choices with
-                  exceptional design.
-                </Card.Text>
-              </Card.Body>
-            </Card>
-          </Row>
-        </Container>
-      </Wrapper>
-
-      <Reviews />
-
-      <ReviewIconsContainer>
-        <ReviewIconsBox>
-          <img src={FacebookIcon} alt="Facebook" />
-          <ReviewStarsContainer>
-            <MdStar />
-            <MdStar />
-            <MdStar />
-            <MdStar />
-            <MdStar />
-          </ReviewStarsContainer>
-        </ReviewIconsBox>
-        <ReviewIconsBox>
-          <img src={YelpIcon} alt="Yelp" />
-          <ReviewStarsContainer>
-            <MdStar />
-            <MdStar />
-            <MdStar />
-            <MdStar />
-            <MdStarHalf />
-          </ReviewStarsContainer>
-        </ReviewIconsBox>
-        <ReviewIconsBox>
-          <img src={HouzzIcon} alt="Houzz" />
-          <ReviewStarsContainer>
-            <MdStar />
-            <MdStar />
-            <MdStar />
-            <MdStar />
-            <MdStar />
-          </ReviewStarsContainer>
-        </ReviewIconsBox>
-        <ReviewIconsBox>
-          <img src={HomeAdvisorIcon} alt="Home Advisor" />
-          <ReviewStarsContainer>
-            <MdStar />
-            <MdStar />
-            <MdStar />
-            <MdStar />
-            <MdStarHalf />
-          </ReviewStarsContainer>
-        </ReviewIconsBox>
-      </ReviewIconsContainer>
-
-      <h2 style={{ margin: `0 10%` }}>
-        Our Projects {` `} <FaBriefcase />
-      </h2>
-      <CarouselComponent />
+      <OurProjects />
     </div>
   </Layout>
 );

@@ -5,6 +5,7 @@ import styled from "styled-components";
 import SEO from "../components/seo";
 
 import AboutHero from "../assets/images/project-photos/BATHROOM-Timothy-Smith-Project/img_8986.jpg";
+import Downtown from "../assets/images/company-placeholder/downtown.jpg";
 
 const Container = styled.section`
   max-width: 1000px;
@@ -12,11 +13,16 @@ const Container = styled.section`
   padding: 1rem;
 `;
 
+const DowntownImage = styled.img`
+  max-width: 50%;
+`;
+
 const About = () => (
   <Layout>
     <SEO title="About" />
     <Hero imgSrc={AboutHero} pageTitle="Who we are" subTitle="What we do best" />
     <Container>
+      <DowntownImage src={Downtown} alt="Downtown San Jose" />
       <p className="lead">
         Brother and Brother Builders is a licensed, bonded and insured remodeling and building
         company servicing the Northern California area. We are family owned and have been in
