@@ -14,12 +14,19 @@ const SubTitle = styled.h2`
 
 const HeroComponent = props => (
   <div style={{ paddingTop: `115px` }}>
-    <LazyHero imageSrc={props.imgSrc} parallaxOffset={100} minHeight={`80vh`} color={`#ccc`}>
+    <LazyHero
+      imageSrc={props.imgSrc}
+      parallaxOffset={100}
+      minHeight={`80vh`}
+      color={`#ccc`}
+      opacity={`0.5`}
+      parallaxOffset={`100`}
+      style={{ overflow: `hidden` }}
+      transitionDuration={`600`}
+    >
       <Title>{props.pageTitle}</Title>
       <SubTitle>{props.subTitle}</SubTitle>
     </LazyHero>
-
-    {/* ... */}
   </div>
 );
 

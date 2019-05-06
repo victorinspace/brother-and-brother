@@ -37,12 +37,17 @@ import BathroomFour from "../assets/images/project-photos/BATHROOM-The-Gentrytow
 
 const Wrapper = styled.section`
   max-width: 1000px;
-  margin: 2rem auto 0;
+  margin: 0 auto;
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
   align-items: center;
   justify-content: center;
+`;
+
+const CategoryContainer = styled.div`
+  max-width: 450px;
+  margin: 1rem 1rem;
 `;
 
 const Services = () => (
@@ -52,111 +57,113 @@ const Services = () => (
     <Wrapper>
       <Container>
         <Row>
-          <Card
-            border="light"
-            style={{
-              width: `25.5rem`,
-              margin: `0.45rem`
-            }}
-          >
-            <Carousel>
-              <Carousel.Item>
-                <img src={FullOne} alt="full remodel" />
-              </Carousel.Item>
-              <Carousel.Item>
-                <img src={FullTwo} alt="full remodel" />
-              </Carousel.Item>
-              <Carousel.Item>
-                <img src={FullThree} alt="full remodel" />
-              </Carousel.Item>
-              <Carousel.Item>
-                <img src={FullFour} alt="full remodel" />
-              </Carousel.Item>
-            </Carousel>
-            <Card.Body>
-              <Card.Title>Full Remodeling</Card.Title>
-              <Card.Text>
-                Whether it’s a new addition to the family or desired expansion Brother and Brother
-                Builders has the experience to guide through every step of the process.
-              </Card.Text>
-            </Card.Body>
-          </Card>
+          <CategoryContainer>
+            <Card border="light">
+              <Carousel>
+                <Carousel.Item>
+                  <img src={FullOne} alt="full remodel" />
+                </Carousel.Item>
+                <Carousel.Item>
+                  <img src={FullTwo} alt="full remodel" />
+                </Carousel.Item>
+                <Carousel.Item>
+                  <img src={FullThree} alt="full remodel" />
+                </Carousel.Item>
+                <Carousel.Item>
+                  <img src={FullFour} alt="full remodel" />
+                </Carousel.Item>
+              </Carousel>
+              <Card.Body>
+                <Card.Title>Full Remodeling</Card.Title>
+                <Card.Text>
+                  Whether it’s a new addition to the family or desired expansion Brother and Brother
+                  Builders has the experience to guide through every step of the process.
+                </Card.Text>
+              </Card.Body>
+            </Card>
+          </CategoryContainer>
 
-          <Card border="light" style={{ width: `25.5rem`, margin: `0.45rem` }}>
-            <Carousel>
-              <Carousel.Item>
-                <img src={AdditionsOne} alt="room additions" />
-              </Carousel.Item>
-              <Carousel.Item>
-                <img src={AdditionsTwo} alt="room additions" />
-              </Carousel.Item>
-              <Carousel.Item>
-                <img src={AdditionsThree} alt="room additions" />
-              </Carousel.Item>
-              <Carousel.Item>
-                <img src={AdditionsFour} alt="room additions" />
-              </Carousel.Item>
-            </Carousel>
-            <Card.Body>
-              <Card.Title>Room Additions</Card.Title>
-              <Card.Text>
-                Whether it’s a new addition to the family or desired expansion Brother and Brother
-                Builders has the experience to guide through every step of the process.
-              </Card.Text>
-            </Card.Body>
-          </Card>
+          <CategoryContainer>
+            <Card border="light">
+              <Carousel>
+                <Carousel.Item>
+                  <img src={AdditionsOne} alt="room additions" />
+                </Carousel.Item>
+                <Carousel.Item>
+                  <img src={AdditionsTwo} alt="room additions" />
+                </Carousel.Item>
+                <Carousel.Item>
+                  <img src={AdditionsThree} alt="room additions" />
+                </Carousel.Item>
+                <Carousel.Item>
+                  <img src={AdditionsFour} alt="room additions" />
+                </Carousel.Item>
+              </Carousel>
+              <Card.Body>
+                <Card.Title>Room Additions</Card.Title>
+                <Card.Text>
+                  Whether it’s a new addition to the family or desired expansion Brother and Brother
+                  Builders has the experience to guide through every step of the process.
+                </Card.Text>
+              </Card.Body>
+            </Card>
+          </CategoryContainer>
         </Row>
 
         <Row>
-          <Card border="light" style={{ width: `25.5rem`, margin: `0.45rem` }}>
-            <Carousel>
-              <Carousel.Item>
-                <img src={KitchensOne} alt="kitchens" />
-              </Carousel.Item>
-              <Carousel.Item>
-                <img src={KitchensTwo} alt="kitchens" />
-              </Carousel.Item>
-              <Carousel.Item>
-                <img src={KitchensThree} alt="kitchens" />
-              </Carousel.Item>
-              <Carousel.Item>
-                <img src={KitchensFour} alt="kitchens" />
-              </Carousel.Item>
-            </Carousel>
-            <Card.Body>
-              <Card.Title>Kitchens</Card.Title>
-              <Card.Text>
-                Brother and Brother Builders understands that the kitchen is the heart of the home.
-                It is where memories are created. The design requires extensive planning and is one
-                of our specialties.
-              </Card.Text>
-            </Card.Body>
-          </Card>
+          <CategoryContainer>
+            <Card border="light">
+              <Carousel>
+                <Carousel.Item>
+                  <img src={KitchensOne} alt="kitchens" />
+                </Carousel.Item>
+                <Carousel.Item>
+                  <img src={KitchensTwo} alt="kitchens" />
+                </Carousel.Item>
+                <Carousel.Item>
+                  <img src={KitchensThree} alt="kitchens" />
+                </Carousel.Item>
+                <Carousel.Item>
+                  <img src={KitchensFour} alt="kitchens" />
+                </Carousel.Item>
+              </Carousel>
+              <Card.Body>
+                <Card.Title>Kitchens</Card.Title>
+                <Card.Text>
+                  Brother and Brother Builders understands that the kitchen is the heart of the
+                  home. It is where memories are created. The design requires extensive planning and
+                  is one of our specialties.
+                </Card.Text>
+              </Card.Body>
+            </Card>
+          </CategoryContainer>
 
-          <Card border="light" style={{ width: `25.5rem`, margin: `0.45rem` }}>
-            <Carousel>
-              <Carousel.Item>
-                <img src={BathroomOne} alt="bathrooms" />
-              </Carousel.Item>
-              <Carousel.Item>
-                <img src={BathroomTwo} alt="bathrooms" />
-              </Carousel.Item>
-              <Carousel.Item>
-                <img src={BathroomThree} alt="bathrooms" />
-              </Carousel.Item>
-              <Carousel.Item>
-                <img src={BathroomFour} alt="bathrooms" />
-              </Carousel.Item>
-            </Carousel>
-            <Card.Body>
-              <Card.Title>Bathroom</Card.Title>
-              <Card.Text>
-                Brother and Brother Builders will transform your old ordinary bathroom to a custom
-                spa. From tile to fixtures we will help you make the right choices with exceptional
-                design.
-              </Card.Text>
-            </Card.Body>
-          </Card>
+          <CategoryContainer>
+            <Card border="light">
+              <Carousel>
+                <Carousel.Item>
+                  <img src={BathroomOne} alt="bathrooms" />
+                </Carousel.Item>
+                <Carousel.Item>
+                  <img src={BathroomTwo} alt="bathrooms" />
+                </Carousel.Item>
+                <Carousel.Item>
+                  <img src={BathroomThree} alt="bathrooms" />
+                </Carousel.Item>
+                <Carousel.Item>
+                  <img src={BathroomFour} alt="bathrooms" />
+                </Carousel.Item>
+              </Carousel>
+              <Card.Body>
+                <Card.Title>Bathroom</Card.Title>
+                <Card.Text>
+                  Brother and Brother Builders will transform your old ordinary bathroom to a custom
+                  spa. From tile to fixtures we will help you make the right choices with
+                  exceptional design.
+                </Card.Text>
+              </Card.Body>
+            </Card>
+          </CategoryContainer>
         </Row>
       </Container>
     </Wrapper>
