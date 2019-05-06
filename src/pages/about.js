@@ -20,7 +20,7 @@ const DowntownImage = styled.img`
 const About = () => (
   <Layout>
     <SEO title="About" />
-    <Hero imgSrc={AboutHero} pageTitle="Who we are" subTitle="What we do best" />
+    <Hero imgSrc={AboutHero} pageTitle="Who We Are" subTitle="What we do best" />
     <Container>
       <DowntownImage src={Downtown} alt="Downtown San Jose" />
       <p className="lead">

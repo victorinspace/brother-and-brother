@@ -4,26 +4,11 @@ import styled from "styled-components";
 // import "./HeroVideo.css";
 
 const VideoContainer = styled.div`
-  top: 0;
-  bottom: 0;
-  right: 0;
-  left: 0;
   overflow: hidden;
-  padding-top: 300px;
+  padding-top: 200px;
   border: 2px solid red;
   pointer-events: none;
   width: 100%;
-  height: 100%;
-
-  ${"" /* @media (min-aspect-ratio: 16/9) {
-    height: 100%;
-    top: -100%;
-  }
-
-  @media (max-aspect-ratio: 16/9) {
-    width: 100%;
-    left: -100%;
-  } */};
 `;
 
 class HeroVideo extends React.Component {
@@ -56,6 +41,15 @@ class HeroVideo extends React.Component {
           onReady={this.videoOnReady}
           onEnd={this.videoOnEnd}
         />
+
+        <HeroVideo
+          videoSrc="https://www.youtube.com/embed/W0LHTWG-UmQ?autoplay=1&loop=1&playlist=W0LHTWG-UmQ"
+          // https://www.youtube.com/embed/W0LHTWG-UmQ?controls=0&showinfo=0&rel=0&autoplay=1&loop=1&playlist=W0LHTWG-UmQ
+          videoSubtitle="Instantly make people think you are a 10x coder with this one secret trick!"
+          videoTitle="Easy Hero Video in React"
+        >
+          <p>This is from a child element</p>
+        </HeroVideo>
       </VideoContainer>
     );
   }

@@ -9,7 +9,7 @@ import Row from "react-bootstrap/Row";
 import Carousel from "react-bootstrap/Carousel";
 
 // Hero Image
-import ServicesHero from "../assets/images/project-photos/BATHROOM-lon-Minier/image-13.jpg";
+import ServicesHero from "../assets/images/project-photos/FULL-The-Silkwood-Project/K1_12903.jpg";
 
 // Full Remodeling Carousl Items
 import FullOne from "../assets/images/project-photos/FULL-The-Silkwood-Project/K1_12863.jpg";
