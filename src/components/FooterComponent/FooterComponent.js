@@ -61,15 +61,6 @@ const AddressHeader = styled.h3`
 
 const FooterComponent = ({ siteTitle }) => (
   <Container>
-    <SocialWrapper>
-      <SocialLink href="https://www.facebook.com/brotherandbrotherbuilders">
-        <FaFacebookSquare />
-      </SocialLink>
-      <SocialLink href="https://www.instagram.com/b_b_builders/">
-        <FaInstagram />
-      </SocialLink>
-    </SocialWrapper>
-
     <AddressContainer>
       <BuildingImg src={BuildingImage} alt="Building" />
       <Address>

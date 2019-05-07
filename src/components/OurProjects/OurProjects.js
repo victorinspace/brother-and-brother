@@ -15,9 +15,7 @@ const CarouselImg = styled.img`
 
 const OurProjects = () => (
   <div style={{ paddingTop: `120px` }}>
-    <h2>
-      Our Projects {` `} <FaBriefcase />
-    </h2>
+    <h2>Our Projects</h2>
 
     <Carousel controls="false" fade="true" interval="2000" indicators="false">
       <Carousel.Item>

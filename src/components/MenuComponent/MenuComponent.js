@@ -17,6 +17,15 @@ const LogoImage = styled.img`
   margin: 0;
 `;
 
+const SocialLink = styled.a`
+  padding: 1px;
+  font-size: 1em;
+  color: #000;
+  :hover {
+    color: #f7931f;
+  }
+`;
+
 const MenuComponent = ({ data }) => (
   <Navbar collapseOnSelect expand="lg" bg="light" fixed="top">
     <Navbar.Brand href="/">
@@ -61,9 +70,13 @@ const MenuComponent = ({ data }) => (
     </Nav>
     <Nav style={{ color: `black` }}>
       <FaHouzz />
-      <FaFacebookSquare />
+      <SocialLink href="https://www.facebook.com/brotherandbrotherbuilders">
+        <FaFacebookSquare />
+      </SocialLink>
       <FaYelp />
-      <FaInstagram />
+      <SocialLink href="https://www.instagram.com/b_b_builders/">
+        <FaInstagram />
+      </SocialLink>
     </Nav>
   </Navbar>
 );

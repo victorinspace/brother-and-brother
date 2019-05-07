@@ -10,7 +10,7 @@ import YelpIcon from "../../assets/images/BB-Review-Images/yelp.png";
 const ReviewIconsContainer = styled.div`
   display: flex;
   justify-content: space-between;
-  max-width: 80%;
+  max-width: 800px;
   margin: 0 auto;
   padding: 0 0 5rem;
 `;
