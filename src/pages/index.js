@@ -17,11 +17,10 @@ const IndexPage = () => (
     <div>
       <SEO title="Home" keywords={[`remodeling`, `building`, `react`]} />
 
-      {/* <VideoComponent className="video-component" /> */}
       <OurProjects />
       <OurServices />
       <OurAwards />
-      <OurReviews />
+      {/* <OurReviews /> */}
     </div>
   </Layout>
 );
