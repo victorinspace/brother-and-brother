@@ -14,6 +14,10 @@ import buildZoom from "../../assets/images/awards/t10pl2.png";
 import topRated from "../../assets/images/awards/toprated.png";
 import yelp from "../../assets/images/awards/yelp.png";
 
+const AwardsTitle = styled.h2`
+  color: rgba(0, 0, 0, 0.5);
+`;
+
 const AwardsContainerContainer = styled.section`
   max-width: 800px;
   margin: 0 auto;
@@ -38,7 +42,7 @@ const AwardImage = styled.img`
 
 const OurAwards = () => (
   <AwardsContainerContainer>
-    <h2 style={{ margin: `0 10%` }}>Awards & Recognition</h2>
+    <AwardsTitle className="text-center h3-responsive">Awards & Recognition</AwardsTitle>
     <AwardsContainer>
       <AwardImage src={oneYear} alt="award" />
       <AwardImage src={fiftyReviews} alt="award" />

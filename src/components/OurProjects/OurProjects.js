@@ -9,13 +9,17 @@ import Bathroom from "../../assets/images/project-photos/BATHROOM-B&A-The-Vizcay
 import FullRemodeling from "../../assets/images/project-photos/FULL-Ben&Sandy-Wu//image-19.jpg";
 import RoomAddition from "../../assets/images/project-photos/BATHROOM-The-Parkwell-Project/K1_13872-HDR.jpg";
 
+const ProjectsTitle = styled.h2`
+  color: rgba(0, 0, 0, 0.5);
+`;
+
 const CarouselImg = styled.img`
   width: 100%;
 `;
 
 const OurProjects = () => (
   <div style={{ paddingTop: `120px` }}>
-    <h2>Our Projects</h2>
+    <ProjectsTitle className="text-center h3-responsive">Our Projects</ProjectsTitle>
 
     <Carousel controls="false" fade="true" interval="2000" indicators="false">
       <Carousel.Item>

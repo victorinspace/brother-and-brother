@@ -13,9 +13,15 @@ import FullRemodeling from "../../assets/images/project-photos/BATHROOM-The-Park
 import Kitchens from "../../assets/images/project-photos/KITCHEN-BATHROOM-The-Nelson-Project/K1_19487.jpg";
 import Bathroom from "../../assets/images/project-photos/BATHROOM-Castro-Valley/1Y6A1829.jpg";
 
+const ServicesTitle = styled.h2`
+  color: rgba(0, 0, 0, 0.5);
+`;
+
 const OurServices = () => (
   <div>
-    <h2 style={{ margin: `0 10%` }}>Our Services</h2>
+    <div>
+      <ServicesTitle className="text-center h3-responsive">Our Services</ServicesTitle>
+    </div>
 
     <Container>
       <Row>
