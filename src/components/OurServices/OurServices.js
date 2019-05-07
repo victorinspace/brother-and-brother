@@ -15,10 +15,7 @@ import Bathroom from "../../assets/images/project-photos/BATHROOM-Castro-Valley/
 
 const OurServices = () => (
   <div>
-    <h2 style={{ margin: `0 10%` }}>
-      Our Services {` `}
-      <FaHome />
-    </h2>
+    <h2 style={{ margin: `0 10%` }}>Our Services</h2>
 
     <Container>
       <Row>

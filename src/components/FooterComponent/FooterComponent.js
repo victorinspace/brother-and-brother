@@ -20,20 +20,6 @@ const CopyrightWrapper = styled.div`
   padding: 5px;
 `;
 
-const SocialWrapper = styled.div`
-  padding: 5px;
-  max-width: 300px;
-`;
-
-const SocialLink = styled.a`
-  padding: 10px 20px;
-  font-size: 2em;
-  color: #9caa49;
-  :hover {
-    color: #eee;
-  }
-`;
-
 const AddressContainer = styled.div`
   display: flex;
   flex-direction: row;

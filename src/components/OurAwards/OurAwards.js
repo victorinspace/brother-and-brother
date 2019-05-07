@@ -38,9 +38,7 @@ const AwardImage = styled.img`
 
 const OurAwards = () => (
   <AwardsContainerContainer>
-    <h2 style={{ margin: `0 10%` }}>
-      Awards and Recognition {` `} <FaAward />
-    </h2>
+    <h2 style={{ margin: `0 10%` }}>Awards & Recognition</h2>
     <AwardsContainer>
       <AwardImage src={oneYear} alt="award" />
       <AwardImage src={fiftyReviews} alt="award" />

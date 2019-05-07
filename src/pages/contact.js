@@ -17,10 +17,6 @@ const Contact = () => (
     <SEO title="Contact" />
     <Hero imgSrc={ContactHero} pageTitle="Contact" subTitle="Reach out for a quote!" />
 
-    <h2 style={{ paddingLeft: `5rem`, paddingTop: `3rem` }}>
-      <FaPen />
-    </h2>
-
     <Form>
       <Form.Row>
         <Form.Group style={{ marginRight: `1rem` }}>
