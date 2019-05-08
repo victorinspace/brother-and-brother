@@ -9,6 +9,7 @@ const VideoHero = () => (
       controls="false"
       loop="true"
       width="100%"
+      height="80vh"
     />
   </div>
 );
