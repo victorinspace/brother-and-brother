@@ -30,6 +30,10 @@ const AddressContainer = styled.div`
 
 const BuildingImg = styled.img`
   max-width: 20%;
+
+  @media only screen and (max-width: 500px) {
+    display: none;
+  }
 `;
 
 const Address = styled.div`

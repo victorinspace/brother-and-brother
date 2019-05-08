@@ -11,6 +11,7 @@ import NavDropdown from "react-bootstrap/NavDropdown";
 import Button from "react-bootstrap/Button";
 
 import HeaderLogo from "../../assets/images/logo.png";
+import HALogo from "../../assets/images/ha-logo.svg";
 
 const LogoImage = styled.img`
   max-width: 140px;
@@ -42,6 +43,59 @@ const MenuComponent = ({ data }) => (
         {/* <Nav.Link href="/reviews">Reviews</Nav.Link> */}
         <Nav.Link href="/contact">Contact</Nav.Link>
       </Nav>
+
+      <SocialLink href="https://www.houzz.com/pro/brotherandbrother/__public" target="_blank">
+        <Button
+          style={{
+            backgroundColor: `white`,
+            color: `rgba(0, 0, 0, 0.5)`,
+            border: `1px solid rgba(0, 0, 0, 0.5)`,
+            margin: `0.15rem`
+          }}
+        >
+          <FaHouzz />
+        </Button>
+      </SocialLink>
+      <SocialLink href="https://www.facebook.com/brotherandbrotherbuilders" target="_blank">
+        <Button
+          style={{
+            backgroundColor: `white`,
+            color: `rgba(0, 0, 0, 0.5)`,
+            border: `1px solid rgba(0, 0, 0, 0.5)`,
+            margin: `0.15rem`
+          }}
+        >
+          <FaFacebookSquare />
+        </Button>
+      </SocialLink>
+      <SocialLink
+        href="https://www.yelp.com/biz/brother-and-brother-builders-san-jose-3"
+        target="_blank"
+      >
+        <Button
+          style={{
+            backgroundColor: `white`,
+            color: `rgba(0, 0, 0, 0.5)`,
+            border: `1px solid rgba(0, 0, 0, 0.5)`,
+            margin: `0.15rem`
+          }}
+        >
+          <FaYelp />
+        </Button>
+      </SocialLink>
+
+      <SocialLink href="https://www.instagram.com/b_b_builders/" target="_blank">
+        <Button
+          style={{
+            backgroundColor: `white`,
+            color: `rgba(0, 0, 0, 0.5)`,
+            border: `1px solid rgba(0, 0, 0, 0.5)`,
+            margin: `0.15rem`
+          }}
+        >
+          <FaInstagram />
+        </Button>
+      </SocialLink>
     </Navbar.Collapse>
 
     <Nav>
@@ -59,7 +113,7 @@ const MenuComponent = ({ data }) => (
       <a href="/contact">
         <Button
           style={{
-            backgroundColor: `#f7931f`,
+            backgroundColor: `rgba(0, 0, 0, 0.5)`,
             border: `none`,
             margin: `0.15rem`
           }}
@@ -67,16 +121,6 @@ const MenuComponent = ({ data }) => (
           <FaCalendarAlt />
         </Button>
       </a>
-    </Nav>
-    <Nav style={{ color: `black` }}>
-      <FaHouzz />
-      <SocialLink href="https://www.facebook.com/brotherandbrotherbuilders">
-        <FaFacebookSquare />
-      </SocialLink>
-      <FaYelp />
-      <SocialLink href="https://www.instagram.com/b_b_builders/">
-        <FaInstagram />
-      </SocialLink>
     </Nav>
   </Navbar>
 );

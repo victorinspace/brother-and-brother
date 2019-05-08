@@ -20,8 +20,6 @@ const ReviewIconsContainer = styled.div`
 `;
 
 const ReviewIconsBox = styled.div`
-  ${"" /* max-width: 40%; */}
-  ${"" /* margin: 0 auto; */}
   padding: 1rem 2rem;
 `;
 
