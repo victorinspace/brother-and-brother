@@ -6,7 +6,8 @@ import SEO from "../components/seo";
 import "bootstrap/dist/css/bootstrap.css";
 
 // Component Imports
-import VideoComponent from "../components/video-component/VideoComponent.js";
+// import VideoComponent from "../components/video-component/VideoComponent.js";
+import VideoHero from "../components/video-component/VideoHero.js";
 import OurProjects from "../components/OurProjects/OurProjects.js";
 import OurServices from "../components/OurServices/OurServices.js";
 import OurAwards from "../components/OurAwards/OurAwards.js";
@@ -17,6 +18,7 @@ const IndexPage = () => (
     <div>
       <SEO title="Home" keywords={[`remodeling`, `building`, `react`]} />
 
+      <VideoHero />
       <OurProjects />
       <OurServices />
       <OurAwards />

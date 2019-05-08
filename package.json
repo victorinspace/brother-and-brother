@@ -28,6 +28,7 @@
     "react-images": "^0.5.19",
     "react-lazy-hero": "^2.0.0",
     "react-photo-gallery": "^7.0.2",
+    "react-player": "^1.11.0",
     "react-youtube": "^7.9.0",
     "styled-components": "^4.2.0"
   },
