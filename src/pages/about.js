@@ -13,6 +13,7 @@ import Col from "react-bootstrap/Col";
 // Image Imports
 import AboutHero from "../assets/images/project-photos/BATHROOM-Timothy-Smith-Project/img_8986.jpg";
 import Downtown from "../assets/images/company-placeholder/downtown.jpg";
+import Timeline from "../assets/images/BB-Timeline-Web.png";
 
 const AboutWrapper = styled.section`
   max-width: 800px;
@@ -39,7 +40,7 @@ const About = () => (
         </VisiontStatement>
       </div>
 
-      <div style={{ display: `flex`, justifyContent: `space-around` }}>
+      <div style={{ margin: `0 auto` }}>
         <DowntownImage src={Downtown} className="" alt="Downtown San Jose" />
       </div>
 
@@ -52,6 +53,14 @@ const About = () => (
         instilling Honesty and integrity into team, and projecting that onto you. Our team looks
         forward to working with you on your project and welcoming you into the family.
       </p>
+
+      <div>
+        <DowntownImage
+          style={{ maxWidth: `100%`, padding: `2rem 0` }}
+          src={Timeline}
+          alt="timeline"
+        />
+      </div>
     </AboutWrapper>
   </Layout>
 );

@@ -11,7 +11,7 @@ import NavDropdown from "react-bootstrap/NavDropdown";
 import Button from "react-bootstrap/Button";
 
 import HeaderLogo from "../../assets/images/logo.png";
-import HALogo from "../../assets/images/ha-logo.svg";
+import HomeAdvisor from "../../assets/images/home_thumbnail.svg";
 
 const LogoImage = styled.img`
   max-width: 140px;
@@ -43,7 +43,6 @@ const MenuComponent = ({ data }) => (
         {/* <Nav.Link href="/reviews">Reviews</Nav.Link> */}
         <Nav.Link href="/contact">Contact</Nav.Link>
       </Nav>
-
       <SocialLink href="https://www.houzz.com/pro/brotherandbrother/__public" target="_blank">
         <Button
           style={{
@@ -94,6 +93,30 @@ const MenuComponent = ({ data }) => (
           }}
         >
           <FaInstagram />
+        </Button>
+      </SocialLink>
+
+      <SocialLink
+        style={{
+          padding: `0`
+        }}
+        href="https://www.homeadvisor.com/rated.BrotherandBrother.54666823.html"
+        target="_blank"
+      >
+        <Button
+          style={{
+            backgroundColor: `white`,
+            border: `1px solid rgba(0, 0, 0, 0.5)`,
+            margin: `0.15rem`,
+            maxWidth: `42px`,
+            maxHeight: `38px`,
+            padding: `0.5rem`,
+            borderRadius: `4px`,
+            display: `inline-block`,
+            overlay: `hidden`
+          }}
+        >
+          <img style={{ width: `100%` }} src={HomeAdvisor} alt="HomeAdvisor" />
         </Button>
       </SocialLink>
     </Navbar.Collapse>

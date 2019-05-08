@@ -1,15 +1,1 @@
-<?xml version="1.0" encoding="utf-8"?>
-<!-- Generator: Adobe Illustrator 19.2.1, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
-<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
-<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-	 width="299.4px" height="99.8px" viewBox="0 0 299.4 99.8" enable-background="new 0 0 299.4 99.8" xml:space="preserve">
-<path fill="#5C6F7A" d="M75.6,49.4l-1.9-1.9L44.8,18.6l-25,25v24.3c0,3.6,2.9,6.5,6.5,6.5h29.6l22.6,22.6V74.4H91
-	c3.6,0,6.5-2.9,6.5-6.5V49.4H78.3H75.6z"/>
-<polygon fill="#F68F1E" points="78,3.9 39.3,3.9 0.2,42.9 11.3,42.9 44.8,9.5 78.3,42.9 117,42.9 "/>
-<path fill="#29A036" d="M224.9,94.8L224.9,94.8c-2.9,0-5.5-1.6-6.8-4.3l-12.7-25c-7.2-0.6-13.9-3.9-18.9-9.2
-	c-5.7-6.2-8.4-13.9-8-22.4c1-15.6,14.4-27.7,30.4-27.7h60.7c8.2,0,16,3.5,21.7,9.4c5.7,6.2,8.4,13.9,8,22.4
-	c-1,15.6-14.4,27.7-30.4,27.7h-24.8l-12.5,25C230.2,93.4,227.8,94.8,224.9,94.8z M208.9,19.4c-9.2,0-16.8,6.8-17.4,15.4
-	c-0.4,5.1,1.6,10.1,5.5,13.5c3.1,2.9,7.4,4.3,11.7,4.3h2.9c1.2,0,2.3,0.6,2.9,1.6l10.3,22.2L235,54.2c0.6-1,1.6-1.6,2.9-1.6h31
-	c9.2,0,16.8-6.8,17.4-15.4c0.4-5.1-1.6-10.1-5.5-13.5c-3.1-2.9-7.4-4.3-11.7-4.3H208.9z"/>
-<rect x="146.4" y="-0.2" fill="#B3B3B3" width="2" height="100"/>
-</svg>
+<svg id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 116.8 93.1"><defs><style>.cls-1{fill:#5c6f7a;}.cls-2{fill:#f68f1e;}</style></defs><title>homeadvisor</title><path class="cls-1" d="M90.6,51.4l-1.9-1.9L59.8,20.6l-25,25V69.9a6.49,6.49,0,0,0,6.5,6.5H70.9L93.5,99V76.4H106a6.49,6.49,0,0,0,6.5-6.5V51.4H90.6Z" transform="translate(-15.2 -5.9)"/><polygon class="cls-2" points="77.8 0 39.1 0 0 39 11.1 39 44.6 5.6 78.1 39 116.8 39 77.8 0"/></svg>
