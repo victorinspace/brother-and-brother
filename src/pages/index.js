@@ -1,6 +1,6 @@
 import React from "react";
 import Layout from "../components/layout";
-import Hero from "../components/HeroComponent/HeroComponent.js";
+
 import styled from "styled-components";
 import SEO from "../components/seo";
 import "bootstrap/dist/css/bootstrap.css";

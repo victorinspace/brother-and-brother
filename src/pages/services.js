@@ -1,8 +1,10 @@
 import React from "react";
-import Hero from "../components/HeroComponent/HeroComponent.js";
+
 import Layout from "../components/layout";
 import styled from "styled-components";
 import SEO from "../components/seo";
+
+// Bootstrap Imports
 import Card from "react-bootstrap/Card";
 import Container from "react-bootstrap/Container";
 import Row from "react-bootstrap/Row";
@@ -53,7 +55,7 @@ const CategoryContainer = styled.div`
 const Services = () => (
   <Layout>
     <SEO title="Services" />
-    <Hero imgSrc={ServicesHero} pageTitle="Services" />
+
     <Wrapper>
       <Container>
         <Row>

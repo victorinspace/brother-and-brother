@@ -1,5 +1,5 @@
 import React from "react";
-import Hero from "../components/HeroComponent/HeroComponent.js";
+
 import Layout from "../components/layout";
 import styled from "styled-components";
 import SEO from "../components/seo";
@@ -32,7 +32,7 @@ const DowntownImage = styled.img`
 const About = () => (
   <Layout>
     <SEO title="About" />
-    <Hero imgSrc={AboutHero} pageTitle="Who We Are" subTitle="What we do best" />
+
     <AboutWrapper>
       <div style={{ paddingBottom: `2rem` }}>
         <VisiontStatement className="text-center h3-responsive">

@@ -145,7 +145,7 @@ const MenuComponent = ({ data }) => (
         >
           <FaCalendarAlt />
           {` `}
-          Appointment
+          Booking
         </Button>
       </a>
     </Nav>

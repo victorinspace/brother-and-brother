@@ -1,5 +1,5 @@
 import React from "react";
-import Hero from "../components/HeroComponent/HeroComponent.js";
+
 import Layout from "../components/layout";
 import styled from "styled-components";
 import SEO from "../components/seo";
@@ -15,7 +15,6 @@ import ContactHero from "../assets/images/project-photos/FULL-Ben&Sandy-Wu/image
 const Contact = () => (
   <Layout>
     <SEO title="Contact" />
-    <Hero imgSrc={ContactHero} pageTitle="Contact" subTitle="Reach out for a quote!" />
 
     <Form>
       <Form.Row>
