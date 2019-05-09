@@ -14,20 +14,14 @@ import buildZoom from "../../assets/images/awards/t10pl2.png";
 import topRated from "../../assets/images/awards/toprated.png";
 import yelp from "../../assets/images/awards/yelp.png";
 
-const AwardsTitle = styled.h2`
-  color: rgba(0, 0, 0, 0.5);
-`;
-
 const AwardsContainerContainer = styled.section`
   max-width: 800px;
   margin: 0 auto;
-  padding: 3rem 0;
   display: block;
 `;
 
 const AwardsContainer = styled.section`
   margin: 0 auto;
-  padding: 1rem 0;
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -42,7 +36,6 @@ const AwardImage = styled.img`
 
 const OurAwards = () => (
   <AwardsContainerContainer>
-    <AwardsTitle className="text-center h3-responsive">Awards & Recognition</AwardsTitle>
     <AwardsContainer>
       <AwardImage src={oneYear} alt="award" />
       <AwardImage src={fiftyReviews} alt="award" />

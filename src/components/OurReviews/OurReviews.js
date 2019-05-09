@@ -16,7 +16,6 @@ const ReviewIconsContainer = styled.div`
   flex-wrap: wrap;
   max-width: 800px;
   margin: 0 auto;
-  padding: 0 1rem 5rem;
 `;
 
 const ReviewIconsBox = styled.div`

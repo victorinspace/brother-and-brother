@@ -5,8 +5,10 @@ import styled from "styled-components";
 import SEO from "../components/seo";
 import "bootstrap/dist/css/bootstrap.css";
 
+// Bootstrap Imports
+import Container from "react-bootstrap/Container";
+
 // Component Imports
-// import VideoComponent from "../components/video-component/VideoComponent.js";
 import VideoHero from "../components/video-component/VideoHero.js";
 import OurProjects from "../components/OurProjects/OurProjects.js";
 import OurServices from "../components/OurServices/OurServices.js";
@@ -15,15 +17,25 @@ import OurReviews from "../components/OurReviews/OurReviews.js";
 
 const IndexPage = () => (
   <Layout>
-    <div>
-      <SEO title="Home" keywords={[`remodeling`, `building`, `react`]} />
+    <SEO title="Home" keywords={[`remodeling`, `building`, `home`]} />
 
-      <VideoHero />
+    {/* <VideoHero /> */}
+
+    <section style={{ backgroundColor: `#dfdfdf`, padding: `1rem 0` }}>
       <OurProjects />
+    </section>
+
+    <section style={{ backgroundColor: `#9caa49`, padding: `5rem 0` }}>
       <OurServices />
+    </section>
+
+    <section style={{ backgroundColor: `#dfdfdf`, padding: `5rem 1rem` }}>
       <OurAwards />
+    </section>
+
+    <section style={{ padding: `5rem 1rem` }}>
       <OurReviews />
-    </div>
+    </section>
   </Layout>
 );
 

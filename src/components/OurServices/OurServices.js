@@ -5,6 +5,7 @@ import { FaHome } from "react-icons/fa";
 // Bootstrap Imports
 import Container from "react-bootstrap/Container";
 import Row from "react-bootstrap/Row";
+import Col from "react-bootstrap/Col";
 import Card from "react-bootstrap/Card";
 
 // Image Imports
@@ -18,63 +19,56 @@ const ServicesTitle = styled.h2`
 `;
 
 const OurServices = () => (
-  <div>
-    <div>
-      <ServicesTitle className="text-center h3-responsive">Our Services</ServicesTitle>
-    </div>
+  <Container>
+    <Row>
+      <Col>
+        <div style={{ padding: `0.5rem` }}>
+          <img src={FullRemodeling} alt="Full Remodeling" />
+          <h3>Full Remodeling</h3>
+          <p className="text-justify">
+            Whether it’s a new addition to the family or desired expansion Brother and Brother
+            Builders has the experience to guide through every step of the process.
+          </p>
+        </div>
+      </Col>
 
-    <Container>
-      <Row>
-        <Card border="light" style={{ width: `25.5rem`, margin: `0.45rem` }}>
-          <Card.Img variant="top" src={FullRemodeling} alt="Full Remodeling" />
-          <Card.Body>
-            <Card.Title>Full Remodeling</Card.Title>
-            <Card.Text>
-              Whether it’s a new addition to the family or desired expansion Brother and Brother
-              Builders has the experience to guide through every step of the process.
-            </Card.Text>
-          </Card.Body>
-        </Card>
+      <Col>
+        <div style={{ padding: `0.5rem` }}>
+          <img src={RoomAddition} alt="Room Additions" />
+          <h3>Room Additions</h3>
+          <p className="text-justify">
+            Whether it’s a new addition to the family or desired expansion Brother and Brother
+            Builders has the experience to guide through every step of the process.
+          </p>
+        </div>
+      </Col>
+    </Row>
 
-        <Card border="light" style={{ width: `25.5rem`, margin: `0.45rem` }}>
-          <Card.Img variant="top" src={RoomAddition} alt="Room Additions" />
-          <Card.Body>
-            <Card.Title>Room Additions</Card.Title>
-            <Card.Text>
-              Whether it’s a new addition to the family or desired expansion Brother and Brother
-              Builders has the experience to guide through every step of the process.
-            </Card.Text>
-          </Card.Body>
-        </Card>
-      </Row>
+    <Row>
+      <Col>
+        <div style={{ padding: `0.5rem` }}>
+          <img src={Kitchens} alt="Kitchens" />
+          <h3>Kitchens</h3>
+          <p className="text-justify">
+            Brother and Brother Builders understands that the kitchen is the heart of the home. It
+            is where memories are created. The design requires extensive planning and is one of our
+            specialties.
+          </p>
+        </div>
+      </Col>
 
-      <Row>
-        <Card border="light" style={{ width: `25.5rem`, margin: `0.45rem` }}>
-          <Card.Img variant="top" src={Kitchens} alt="Kitchens" />
-          <Card.Body>
-            <Card.Title>Kitchens</Card.Title>
-            <Card.Text>
-              Brother and Brother Builders understands that the kitchen is the heart of the home. It
-              is where memories are created. The design requires extensive planning and is one of
-              our specialties.
-            </Card.Text>
-          </Card.Body>
-        </Card>
-
-        <Card border="light" style={{ width: `25.5rem`, margin: `0.45rem` }}>
-          <Card.Img variant="top" src={Bathroom} alt="Bathroom" />
-          <Card.Body>
-            <Card.Title>Bathroom</Card.Title>
-            <Card.Text>
-              Brother and Brother Builders will transform your old ordinary bathroom to a custom
-              spa. From tile to fixtures we will help you make the right choices with exceptional
-              design.
-            </Card.Text>
-          </Card.Body>
-        </Card>
-      </Row>
-    </Container>
-  </div>
+      <Col>
+        <div style={{ padding: `0.5rem` }}>
+          <img src={Bathroom} alt="Bathroom" />
+          <h3>Bathroom</h3>
+          <p className="text-justify">
+            Brother and Brother Builders will transform your old ordinary bathroom to a custom spa.
+            From tile to fixtures we will help you make the right choices with exceptional design.
+          </p>
+        </div>
+      </Col>
+    </Row>
+  </Container>
 );
 
 export default OurServices;
