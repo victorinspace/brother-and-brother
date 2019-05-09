@@ -131,6 +131,8 @@ const MenuComponent = ({ data }) => (
           }}
         >
           <FaPhone />
+          {` `}
+          888.412.2632
         </Button>
       </a>
       <a href="/contact">
@@ -142,6 +144,8 @@ const MenuComponent = ({ data }) => (
           }}
         >
           <FaCalendarAlt />
+          {` `}
+          Appointment
         </Button>
       </a>
     </Nav>
