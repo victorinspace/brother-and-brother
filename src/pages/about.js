@@ -41,7 +41,7 @@ const About = () => (
   <Layout>
     <SEO title="About" />
 
-    <Container style={{ paddingTop: `120px` }}>
+    <Container style={{ paddingTop: `11rem` }}>
       <div style={{ paddingBottom: `2rem` }}>
         <VisiontStatement className="text-center h3-responsive">
           “Home is where our story begins”
