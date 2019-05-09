@@ -16,7 +16,7 @@ const Contact = () => (
   <Layout>
     <SEO title="Contact" />
 
-    <Form>
+    <Form style={{ marginTop: `11rem` }}>
       <Form.Row>
         <Form.Group style={{ marginRight: `1rem` }}>
           <Form.Control
