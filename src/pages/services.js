@@ -5,10 +5,11 @@ import styled from "styled-components";
 import SEO from "../components/seo";
 
 // Bootstrap Imports
-import Card from "react-bootstrap/Card";
 import Container from "react-bootstrap/Container";
 import Row from "react-bootstrap/Row";
+import Col from "react-bootstrap/Col";
 import Carousel from "react-bootstrap/Carousel";
+import Card from "react-bootstrap/Card";
 
 // Hero Image
 import ServicesHero from "../assets/images/project-photos/FULL-The-Silkwood-Project/K1_12903.jpg";
@@ -37,16 +38,6 @@ import BathroomTwo from "../assets/images/project-photos/BATHROOM-The-Arezzo-Pro
 import BathroomThree from "../assets/images/project-photos/BATHROOM-Castro-Valley/1Y6A1829.jpg";
 import BathroomFour from "../assets/images/project-photos/BATHROOM-The-Gentrytown-Project/IMG_92960-sm.jpg";
 
-const Wrapper = styled.section`
-  max-width: 1000px;
-  margin: 0 auto;
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  align-items: center;
-  justify-content: center;
-`;
-
 const CategoryContainer = styled.div`
   max-width: 450px;
   margin: 1rem 1rem;
@@ -56,9 +47,9 @@ const Services = () => (
   <Layout>
     <SEO title="Services" />
 
-    <Wrapper>
-      <Container>
-        <Row>
+    <Container style={{ paddingTop: `190px`, paddingBottom: `50px` }}>
+      <Row>
+        <Col>
           <CategoryContainer>
             <Card border="light">
               <Carousel>
@@ -84,7 +75,9 @@ const Services = () => (
               </Card.Body>
             </Card>
           </CategoryContainer>
+        </Col>
 
+        <Col>
           <CategoryContainer>
             <Card border="light">
               <Carousel>
@@ -110,9 +103,11 @@ const Services = () => (
               </Card.Body>
             </Card>
           </CategoryContainer>
-        </Row>
+        </Col>
+      </Row>
 
-        <Row>
+      <Row>
+        <Col>
           <CategoryContainer>
             <Card border="light">
               <Carousel>
@@ -139,7 +134,9 @@ const Services = () => (
               </Card.Body>
             </Card>
           </CategoryContainer>
+        </Col>
 
+        <Col>
           <CategoryContainer>
             <Card border="light">
               <Carousel>
@@ -166,9 +163,9 @@ const Services = () => (
               </Card.Body>
             </Card>
           </CategoryContainer>
-        </Row>
-      </Container>
-    </Wrapper>
+        </Col>
+      </Row>
+    </Container>
   </Layout>
 );
 

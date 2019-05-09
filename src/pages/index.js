@@ -1,8 +1,9 @@
 import React from "react";
 import Layout from "../components/layout";
-
-import styled from "styled-components";
 import SEO from "../components/seo";
+
+// Imported Packages
+import styled from "styled-components";
 import "bootstrap/dist/css/bootstrap.css";
 
 // Bootstrap Imports
@@ -19,18 +20,16 @@ const IndexPage = () => (
   <Layout>
     <SEO title="Home" keywords={[`remodeling`, `building`, `home`]} />
 
-    {/* <VideoHero /> */}
-
-    <section style={{ backgroundColor: `#dfdfdf`, padding: `1rem 0` }}>
+    <section style={{ backgroundColor: ``, padding: `1rem 0` }}>
       <OurProjects />
     </section>
 
-    <section style={{ backgroundColor: `#9caa49`, padding: `5rem 0` }}>
-      <OurServices />
+    <section style={{ backgroundColor: `#dfdfdf`, padding: `5rem 0` }}>
+      <OurAwards />
     </section>
 
-    <section style={{ backgroundColor: `#dfdfdf`, padding: `5rem 1rem` }}>
-      <OurAwards />
+    <section style={{ backgroundColor: `#9caa49`, padding: `5rem 1rem` }}>
+      <OurServices />
     </section>
 
     <section style={{ padding: `5rem 1rem` }}>

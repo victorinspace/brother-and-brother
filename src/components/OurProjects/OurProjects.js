@@ -11,10 +11,22 @@ import Col from "react-bootstrap/Col";
 import Carousel from "react-bootstrap/Carousel";
 
 // Image Imports
-import Kitchens from "../../assets/images/project-photos/KITCHEN-The-Arezzo-Project/K1_15511-2.jpg";
-import Bathroom from "../../assets/images/project-photos/BATHROOM-B&A-The-Vizcaya-Project/image-23.jpg";
-import FullRemodeling from "../../assets/images/project-photos/FULL-Ben&Sandy-Wu//image-19.jpg";
-import RoomAddition from "../../assets/images/project-photos/BATHROOM-The-Parkwell-Project/K1_13872-HDR.jpg";
+import One from "../../assets/images/carousel/bb-image-1.jpeg";
+import Two from "../../assets/images/carousel/bb-image-2.jpeg";
+import Three from "../../assets/images/carousel/bb-image-3.jpeg";
+import Four from "../../assets/images/carousel/bb-image-4.jpeg";
+import Five from "../../assets/images/carousel/bb-image-5.jpeg";
+import Six from "../../assets/images/carousel/bb-image-6.jpeg";
+import Seven from "../../assets/images/carousel/bb-image-7.jpeg";
+import Eight from "../../assets/images/carousel/bb-image-8.jpeg";
+import Nine from "../../assets/images/carousel/bb-image-9.jpeg";
+import Ten from "../../assets/images/carousel/bb-image-10.jpeg";
+import Eleven from "../../assets/images/carousel/bb-image-11.jpeg";
+import Twelve from "../../assets/images/carousel/bb-image-12.jpeg";
+import Thirteen from "../../assets/images/carousel/bb-image-13.jpeg";
+import Fourteen from "../../assets/images/carousel/bb-image-14.jpeg";
+import Fifteen from "../../assets/images/carousel/bb-image-15.jpeg";
+import Sixteen from "../../assets/images/carousel/bb-image-16.jpeg";
 
 // Component Styles
 const CarouselImg = styled.img`
@@ -22,21 +34,57 @@ const CarouselImg = styled.img`
 `;
 
 const OurProjects = () => (
-  <Container style={{ paddingTop: `120px` }}>
+  <Container style={{ marginTop: `9rem` }}>
     <Row>
       <Col>
         <Carousel controls="false" fade="true" interval="2000" indicators="false">
           <Carousel.Item>
-            <CarouselImg src={Kitchens} alt="Third slide" />
+            <CarouselImg src={One} alt="Third slide" />
           </Carousel.Item>
           <Carousel.Item>
-            <CarouselImg src={Bathroom} alt="Fourth slide" />
+            <CarouselImg src={Two} alt="Fourth slide" />
           </Carousel.Item>
           <Carousel.Item>
-            <CarouselImg src={FullRemodeling} alt="Third slide" />
+            <CarouselImg src={Three} alt="Third slide" />
           </Carousel.Item>
           <Carousel.Item>
-            <CarouselImg src={RoomAddition} alt="First slide" />
+            <CarouselImg src={Four} alt="First slide" />
+          </Carousel.Item>
+          <Carousel.Item>
+            <CarouselImg src={Five} alt="First slide" />
+          </Carousel.Item>
+          <Carousel.Item>
+            <CarouselImg src={Six} alt="First slide" />
+          </Carousel.Item>
+          <Carousel.Item>
+            <CarouselImg src={Seven} alt="First slide" />
+          </Carousel.Item>
+          <Carousel.Item>
+            <CarouselImg src={Eight} alt="First slide" />
+          </Carousel.Item>
+          <Carousel.Item>
+            <CarouselImg src={Nine} alt="First slide" />
+          </Carousel.Item>
+          <Carousel.Item>
+            <CarouselImg src={Ten} alt="First slide" />
+          </Carousel.Item>
+          <Carousel.Item>
+            <CarouselImg src={Eleven} alt="First slide" />
+          </Carousel.Item>
+          <Carousel.Item>
+            <CarouselImg src={Twelve} alt="First slide" />
+          </Carousel.Item>
+          <Carousel.Item>
+            <CarouselImg src={Thirteen} alt="First slide" />
+          </Carousel.Item>
+          <Carousel.Item>
+            <CarouselImg src={Fourteen} alt="First slide" />
+          </Carousel.Item>
+          <Carousel.Item>
+            <CarouselImg src={Fifteen} alt="First slide" />
+          </Carousel.Item>
+          <Carousel.Item>
+            <CarouselImg src={Sixteen} alt="First slide" />
           </Carousel.Item>
         </Carousel>
       </Col>

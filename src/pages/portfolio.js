@@ -1,15 +1,16 @@
 import React from "react";
 import { Link } from "gatsby";
-
 import Layout from "../components/layout";
-import styled from "styled-components";
 import SEO from "../components/seo";
-import Card from "react-bootstrap/Card";
+import styled from "styled-components";
+
+// Bootstrap Imports
 import Container from "react-bootstrap/Container";
 import Row from "react-bootstrap/Row";
+import Col from "react-bootstrap/Col";
+import Card from "react-bootstrap/Card";
 
-import PortfolioHero from "../assets/images/project-photos/FULL-Ben&Sandy-Wu/image-58.jpg";
-
+// Image Imports
 import RoomAddition from "../assets/images/project-photos/ADDITION-The-Cedar-Project/K1_14763.jpg";
 import FullRemodeling from "../assets/images/project-photos/BATHROOM-The-Parkwell-Project/K1_13828-HDR.jpg";
 import Kitchens from "../assets/images/project-photos/KITCHEN-BATHROOM-The-Nelson-Project/K1_19487.jpg";
@@ -22,6 +23,7 @@ const Wrapper = styled.section`
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: space-between;
+  padding-top: 120px;
 `;
 
 const Portfolio = () => (

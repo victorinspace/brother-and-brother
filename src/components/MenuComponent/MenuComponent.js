@@ -14,7 +14,7 @@ import HeaderLogo from "../../assets/images/logo.png";
 import HomeAdvisor from "../../assets/images/home_thumbnail.svg";
 
 const LogoImage = styled.img`
-  max-width: 140px;
+  max-width: 9rem;
   margin: 0;
 `;
 
@@ -121,34 +121,32 @@ const MenuComponent = ({ data }) => (
       </SocialLink>
     </Navbar.Collapse>
 
-    <Nav>
-      <a href="tel:+1+888+412+2632">
-        <Button
-          style={{
-            backgroundColor: `#9caa49`,
-            border: `none`,
-            margin: `0.15rem`
-          }}
-        >
-          <FaPhone />
-          {` `}
-          888.412.2632
-        </Button>
-      </a>
-      <a href="/contact">
-        <Button
-          style={{
-            backgroundColor: `rgba(0, 0, 0, 0.5)`,
-            border: `none`,
-            margin: `0.15rem`
-          }}
-        >
-          <FaCalendarAlt />
-          {` `}
-          Booking
-        </Button>
-      </a>
-    </Nav>
+    <a href="tel:+1+888+412+2632">
+      <Button
+        style={{
+          backgroundColor: `#9caa49`,
+          border: `none`,
+          margin: `0.15rem`
+        }}
+      >
+        <FaPhone />
+        {` `}
+        888.412.2632
+      </Button>
+    </a>
+    <a href="/contact">
+      <Button
+        style={{
+          backgroundColor: `rgba(0, 0, 0, 0.5)`,
+          border: `none`,
+          margin: `0.15rem`
+        }}
+      >
+        <FaCalendarAlt />
+        {` `}
+        Booking
+      </Button>
+    </a>
   </Navbar>
 );
 
